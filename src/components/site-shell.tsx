@@ -11,7 +11,7 @@ type SiteShellProps = {
 export default function SiteShell({
   title,
   variant = "default",
-  showPrimaryNav = true,
+  showPrimaryNav = false,
   children,
 }: SiteShellProps) {
   const rootClassName = variant === "blog" ? "site-root site-root--blog" : "site-root";

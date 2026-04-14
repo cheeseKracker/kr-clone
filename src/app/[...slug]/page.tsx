@@ -33,11 +33,8 @@ export default async function CatchAllPage({ params }: CatchAllPageProps) {
   }
 
   return (
-    <SiteShell title={page.title}>
+    <SiteShell>
       <PageMarkdown content={page.markdown} />
-      <small className="meta-note">
-        Cloned route path: {pathname}
-      </small>
     </SiteShell>
   );
 }

@@ -1,6 +1,7 @@
 import ExifBlogNav from "@/components/exif-blog-nav";
+import PageMarkdown from "@/components/page-markdown";
 import SiteShell from "@/components/site-shell";
-import { getRouteManifest } from "@/lib/content";
+import { findPageByPath, getRouteManifest } from "@/lib/content";
 
 type TagPageProps = {
   params: Promise<{ tag: string }>;
@@ -16,15 +17,14 @@ export function generateStaticParams() {
 
 export default async function TagPage({ params }: TagPageProps) {
   const { tag } = await params;
+  const page = findPageByPath(`/blog/tag/${tag}`);
+
   return (
     <SiteShell variant="blog" showPrimaryNav={false}>
       <ExifBlogNav />
-      <p>
-        Tag archive page for <strong>{tag}</strong>.
-      </p>
-      <small className="meta-note">
-        This route is generated from normalized route manifests.
-      </small>
+      <PageMarkdown
+        content={page?.markdown ?? `Tag archive page for **${tag}** is unavailable.`}
+      />
     </SiteShell>
   );
 }
