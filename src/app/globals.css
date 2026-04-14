@@ -1,0 +1,93 @@
+@import "tailwindcss";
+@import "../styles/theme-tokens.css";
+
+:root {
+  --keyaar-bg: var(--token-color-bg);
+  --keyaar-surface: #ffffff;
+  --keyaar-blue: var(--token-color-link);
+  --keyaar-red: var(--token-color-link-hover);
+  --keyaar-text: var(--token-color-link);
+}
+
+@theme inline {
+  --color-background: var(--keyaar-bg);
+  --color-foreground: var(--keyaar-text);
+  --font-sans: var(--font-ibm-plex-mono);
+  --font-mono: var(--font-ibm-plex-mono);
+}
+
+body {
+  margin: 0;
+  background: var(--keyaar-bg);
+  color: var(--keyaar-text);
+  font-family: var(--token-font-primary);
+  font-size: var(--token-size-base);
+  line-height: var(--token-line-height-base);
+}
+
+a {
+  color: var(--keyaar-blue);
+  text-decoration: underline;
+}
+
+a:hover {
+  color: var(--keyaar-red);
+}
+
+.site-root {
+  min-height: 100vh;
+  padding: 1.5rem 1rem 3rem;
+}
+
+.site-header {
+  max-width: 46rem;
+  margin: 0 auto 1.25rem;
+}
+
+.site-nav {
+  display: flex;
+  gap: 1rem;
+}
+
+.site-main {
+  max-width: 46rem;
+  margin: 0 auto;
+}
+
+.site-title {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin: 0 0 1.25rem;
+}
+
+.page-markdown :is(h1, h2, h3, h4, h5, h6) {
+  font-size: 1.05rem;
+  font-weight: 500;
+}
+
+.page-markdown p {
+  margin: 0 0 1rem;
+}
+
+.page-markdown ul {
+  margin: 0 0 1rem 1.25rem;
+}
+
+.post-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.empty-state {
+  opacity: 0.8;
+}
+
+.meta-note {
+  display: block;
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  opacity: 0.85;
+}

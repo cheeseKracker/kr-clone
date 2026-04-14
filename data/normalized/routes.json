@@ -1,0 +1,846 @@
+{
+  "generatedAt": "2026-04-14T15:13:10.438Z",
+  "total": 168,
+  "routes": [
+    {
+      "pathname": "/",
+      "type": "home",
+      "title": "Hello, I’m abhijithkeyaar."
+    },
+    {
+      "pathname": "/blog/tag/chellam",
+      "type": "tag",
+      "title": "Exif: Blog"
+    },
+    {
+      "pathname": "/blog/in-which-the-author-climbs-a-short-rock-outcrop-and-attempts-contemplating-weighty-stuff",
+      "type": "blog-post",
+      "title": "Exif: Blog"
+    },
+    {
+      "pathname": "/files/KR-20210806-NIDK-Digital-Colour-CourseProposal.pdf",
+      "type": "page",
+      "title": "Colour (Digital)"
+    },
+    {
+      "pathname": "/blog/memories-of-my-melancholy-chairs",
+      "type": "blog-post",
+      "title": "Exif: Blog"
+    },
+    {
+      "pathname": "/blog/zen-and-the-zen-of-motorcycle-something",
+      "type": "blog-post",
+      "title": "Exif: Blog"
+    },
+    {
+      "pathname": "/blog/passages",
+      "type": "blog-post",
+      "title": "Exif: Blog"
+    },
+    {
+      "pathname": "/blog/if-the-mountain",
+      "type": "blog-post",
+      "title": "Exif: Blog"
+    },
+    {
+      "pathname": "/blog/teaching",
+      "type": "blog-post",
+      "title": "Exif: Blog"
+    },
+    {
+      "pathname": "/blog/early-ish-morning-ride",
+      "type": "blog-post",
+      "title": "Exif: Blog"
+    },
+    {
+      "pathname": "/blog/html",
+      "type": "blog-post",
+      "title": "Exif: Blog"
+    },
+    {
+      "pathname": "/blog/saloved",
+      "type": "blog-post",
+      "title": "Exif: Blog"
+    },
+    {
+      "pathname": "/blog/tag/letters",
+      "type": "tag",
+      "title": "Exif: Blog"
+    },
+    {
+      "pathname": "/blog/two-wheels-and-some-juice",
+      "type": "blog-post",
+      "title": "Exif: Blog"
+    },
+    {
+      "pathname": "/blog/tabebuias-20250401",
+      "type": "blog-post",
+      "title": "Exif: Blog"
+    },
+    {
+      "pathname": "/blog/tag/r",
+      "type": "tag",
+      "title": "Exif: Blog"
+    },
+    {
+      "pathname": "/blog/monet",
+      "type": "blog-post",
+      "title": "Exif: Blog"
+    },
+    {
+      "pathname": "/blog/tag/love",
+      "type": "tag",
+      "title": "Exif: Blog"
+    },
+    {
+      "pathname": "/blog/infinite-gestalt",
+      "type": "blog-post",
+      "title": "Exif: Blog"
+    },
+    {
+      "pathname": "/files/KR-20180801-Typography01-Abstract.pdf",
+      "type": "page",
+      "title": "Typography-1"
+    },
+    {
+      "pathname": "/blog/listening-to-three-parts-sedaris-in-bombayupdike-the-link",
+      "type": "blog-post",
+      "title": "Exif: Blog"
+    },
+    {
+      "pathname": "/blog/tiny-atrocities",
+      "type": "blog-post",
+      "title": "Exif: Blog"
+    },
+    {
+      "pathname": "/files/symboldesign/KR-20180910-SymbolDesign-CourseAbstract.pdf",
+      "type": "page",
+      "title": "Basics"
+    },
+    {
+      "pathname": "/blog/tabebuias-20250330",
+      "type": "blog-post",
+      "title": "Exif: Blog"
+    },
+    {
+      "pathname": "/files/typography1/KR-20190923-Typography1-CourseAbstract.pdf",
+      "type": "page",
+      "title": "Letters Words"
+    },
+    {
+      "pathname": "/blog/standard-ebooks-typography-manual",
+      "type": "blog-post",
+      "title": "Exif: Blog"
+    },
+    {
+      "pathname": "/blog/the-best-love-letters-are-the-ones-past-their-send-by-date",
+      "type": "blog-post",
+      "title": "Exif: Blog"
+    },
+    {
+      "pathname": "/blog/tag/design-ed",
+      "type": "tag",
+      "title": "Exif: Blog"
+    },
+    {
+      "pathname": "/blog/suba",
+      "type": "blog-post",
+      "title": "Exif: Blog"
+    },
+    {
+      "pathname": "/files/KR-20211129-Typography1-CourseAbstract.pdf",
+      "type": "page",
+      "title": "With Semester 3 Communication Design"
+    },
+    {
+      "pathname": "/blog/f00-is-the-warmest-colour",
+      "type": "blog-post",
+      "title": "Exif: Blog"
+    },
+    {
+      "pathname": "/blog/gyanbhaskar-gyanbharti-gyanbhashaposhini",
+      "type": "blog-post",
+      "title": "Exif: Blog"
+    },
+    {
+      "pathname": "/blog/hard-work",
+      "type": "blog-post",
+      "title": "Exif: Blog"
+    },
+    {
+      "pathname": "/blog/tag/kl11",
+      "type": "tag",
+      "title": "Exif: Blog"
+    },
+    {
+      "pathname": "/blog/4-in-the-morning-this-plus-ginger-tea-off-campus-all-the-right",
+      "type": "blog-post",
+      "title": "Exif: Blog"
+    },
+    {
+      "pathname": "/blog/tag/work",
+      "type": "tag",
+      "title": "Exif: Blog"
+    },
+    {
+      "pathname": "/files/KR-20210613-WritingForDesign-CourseProposal.pdf",
+      "type": "page",
+      "title": "Abhijith KR"
+    },
+    {
+      "pathname": "/blog/tag/text",
+      "type": "tag",
+      "title": "Exif: Blog"
+    },
+    {
+      "pathname": "/blog/tag/motorcycles",
+      "type": "tag",
+      "title": "Exif: Blog"
+    },
+    {
+      "pathname": "/blog/drawing-water",
+      "type": "blog-post",
+      "title": "Exif: Blog"
+    },
+    {
+      "pathname": "/blog/the-space-between-letters",
+      "type": "blog-post",
+      "title": "Exif: Blog"
+    },
+    {
+      "pathname": "/blog/shoolagiri-in-march",
+      "type": "blog-post",
+      "title": "Exif: Blog"
+    },
+    {
+      "pathname": "/blog/fonts-typefaces-etcetera",
+      "type": "blog-post",
+      "title": "Exif: Blog"
+    },
+    {
+      "pathname": "/blog/solid-states",
+      "type": "blog-post",
+      "title": "Exif: Blog"
+    },
+    {
+      "pathname": "/blog/wishlist",
+      "type": "blog-post",
+      "title": "Exif: Blog"
+    },
+    {
+      "pathname": "/blog/dog-years",
+      "type": "blog-post",
+      "title": "Exif: Blog"
+    },
+    {
+      "pathname": "/blog/tag/people",
+      "type": "tag",
+      "title": "Exif: Blog"
+    },
+    {
+      "pathname": "/blog/photosynthesis",
+      "type": "blog-post",
+      "title": "Exif: Blog"
+    },
+    {
+      "pathname": "/blog/rss.xml",
+      "type": "blog-post",
+      "title": "exif v 3.0https://keyaar.in/blog/"
+    },
+    {
+      "pathname": "/files/typography2/KR-20190214_Typography2_CourseAbstract.pdf",
+      "type": "page",
+      "title": "Typography 2"
+    },
+    {
+      "pathname": "/blog/tag/story",
+      "type": "tag",
+      "title": "Exif: Blog"
+    },
+    {
+      "pathname": "/blog/chel-gato-tails",
+      "type": "blog-post",
+      "title": "Exif: Blog"
+    },
+    {
+      "pathname": "/files/typography2/KR-20200310-NIDV-Typography2-CourseAbstract.pdf",
+      "type": "page",
+      "title": "Typography 2"
+    },
+    {
+      "pathname": "/blog/one-can%E2%80%99t-spell-nostalgia-without-a-bit-of-stalling",
+      "type": "blog-post",
+      "title": "Exif: Blog"
+    },
+    {
+      "pathname": "/blog/the-year-in-rearview",
+      "type": "blog-post",
+      "title": "Exif: Blog"
+    },
+    {
+      "pathname": "/blog/paul-vikramadityan-rand",
+      "type": "blog-post",
+      "title": "Exif: Blog"
+    },
+    {
+      "pathname": "/blog/slowing-down",
+      "type": "blog-post",
+      "title": "Exif: Blog"
+    },
+    {
+      "pathname": "/blog/peter-mendelsunds-design-school-for-struggling-pianists",
+      "type": "blog-post",
+      "title": "Exif: Blog"
+    },
+    {
+      "pathname": "/blog/tag/illness",
+      "type": "tag",
+      "title": "Exif: Blog"
+    },
+    {
+      "pathname": "/blog/updoots-at-thirtysomething",
+      "type": "blog-post",
+      "title": "Exif: Blog"
+    },
+    {
+      "pathname": "/blog/all-roads-lead-to-roam",
+      "type": "blog-post",
+      "title": "Exif: Blog"
+    },
+    {
+      "pathname": "/sandbox",
+      "type": "page",
+      "title": "- abhijithkeyaar: select projects (2008–2020)"
+    },
+    {
+      "pathname": "/blog/tag/food",
+      "type": "tag",
+      "title": "Exif: Blog"
+    },
+    {
+      "pathname": "/blog/ill-coast-not-down-the-lane-with-a-happy-refrain",
+      "type": "blog-post",
+      "title": "Exif: Blog"
+    },
+    {
+      "pathname": "/blog/tag/nowplaying",
+      "type": "tag",
+      "title": "Exif: Blog"
+    },
+    {
+      "pathname": "/blog/acuity",
+      "type": "blog-post",
+      "title": "Exif: Blog"
+    },
+    {
+      "pathname": "/blog/voluntary-simplicty",
+      "type": "blog-post",
+      "title": "Exif: Blog"
+    },
+    {
+      "pathname": "/blog/granting-wishes",
+      "type": "blog-post",
+      "title": "Exif: Blog"
+    },
+    {
+      "pathname": "/blog",
+      "type": "blog-index",
+      "title": "Exif: Blog"
+    },
+    {
+      "pathname": "/blog/knapp",
+      "type": "blog-post",
+      "title": "Exif: Blog"
+    },
+    {
+      "pathname": "/blog/frazz",
+      "type": "blog-post",
+      "title": "Exif: Blog"
+    },
+    {
+      "pathname": "/blog/malayajamaruthan-almost-six-seconds-of-fame",
+      "type": "blog-post",
+      "title": "Exif: Blog"
+    },
+    {
+      "pathname": "/files/typography2/KR-20191105-WSAD-Typography2-CourseAbstract.pdf",
+      "type": "page",
+      "title": "Typography 2"
+    },
+    {
+      "pathname": "/blog/tag/technology",
+      "type": "tag",
+      "title": "Exif: Blog"
+    },
+    {
+      "pathname": "/blog/tag/book",
+      "type": "tag",
+      "title": "Exif: Blog"
+    },
+    {
+      "pathname": "/blog/tag/bicycles",
+      "type": "tag",
+      "title": "Exif: Blog"
+    },
+    {
+      "pathname": "/blog/minfo",
+      "type": "blog-post",
+      "title": "Exif: Blog"
+    },
+    {
+      "pathname": "/blog/playlist-hunting",
+      "type": "blog-post",
+      "title": "Exif: Blog"
+    },
+    {
+      "pathname": "/blog/kalyani-amma",
+      "type": "blog-post",
+      "title": "Exif: Blog"
+    },
+    {
+      "pathname": "/blog/highres-dreams",
+      "type": "blog-post",
+      "title": "Exif: Blog"
+    },
+    {
+      "pathname": "/blog/uses",
+      "type": "blog-post",
+      "title": "Exif: Blog"
+    },
+    {
+      "pathname": "/blog/typographyreturns",
+      "type": "blog-post",
+      "title": "Exif: Blog"
+    },
+    {
+      "pathname": "/blog/tag/places",
+      "type": "tag",
+      "title": "Exif: Blog"
+    },
+    {
+      "pathname": "/files/KR-20210211-Font-Typeface-Poster-V1.pdf",
+      "type": "page",
+      "title": "The font is what you install."
+    },
+    {
+      "pathname": "/blog/rulz",
+      "type": "blog-post",
+      "title": "Exif: Blog"
+    },
+    {
+      "pathname": "/blog/tag/nowreading",
+      "type": "tag",
+      "title": "Exif: Blog"
+    },
+    {
+      "pathname": "/blog/tag/link",
+      "type": "tag",
+      "title": "Exif: Blog"
+    },
+    {
+      "pathname": "/blog/fullyautomatedluxuryonlinetypographytwo",
+      "type": "blog-post",
+      "title": "Exif: Blog"
+    },
+    {
+      "pathname": "/blog/tag/hardware",
+      "type": "tag",
+      "title": "Exif: Blog"
+    },
+    {
+      "pathname": "/blog/glass-houses",
+      "type": "blog-post",
+      "title": "Exif: Blog"
+    },
+    {
+      "pathname": "/blog/pixels-ink-3",
+      "type": "blog-post",
+      "title": "Exif: Blog"
+    },
+    {
+      "pathname": "/blog/on-ze-road",
+      "type": "blog-post",
+      "title": "Exif: Blog"
+    },
+    {
+      "pathname": "/blog/them-dashes-or-the-offical-em-dash-policy-here-on-exif",
+      "type": "blog-post",
+      "title": "Exif: Blog"
+    },
+    {
+      "pathname": "/blog/tag/objects",
+      "type": "tag",
+      "title": "Exif: Blog"
+    },
+    {
+      "pathname": "/blog/linear-red-and-thockallove",
+      "type": "blog-post",
+      "title": "Exif: Blog"
+    },
+    {
+      "pathname": "/blog/1-5-track",
+      "type": "blog-post",
+      "title": "Exif: Blog"
+    },
+    {
+      "pathname": "/blog/gradient-retriever",
+      "type": "blog-post",
+      "title": "Exif: Blog"
+    },
+    {
+      "pathname": "/blog/adulting",
+      "type": "blog-post",
+      "title": "Exif: Blog"
+    },
+    {
+      "pathname": "/blog/in-an-umebayashi-induced-comagasm-the-atm-queue-snakes-along",
+      "type": "blog-post",
+      "title": "Exif: Blog"
+    },
+    {
+      "pathname": "/blog/stroke-weight",
+      "type": "blog-post",
+      "title": "Exif: Blog"
+    },
+    {
+      "pathname": "/blog/waterfountain-pdf-drift",
+      "type": "blog-post",
+      "title": "Exif: Blog"
+    },
+    {
+      "pathname": "/files/KR-20210307-NIDV-CommunicationBasics-CourseAbstract.pdf",
+      "type": "page",
+      "title": "Communication Graphics: Basics"
+    },
+    {
+      "pathname": "/blog/shoulders-of-giants-1",
+      "type": "blog-post",
+      "title": "Exif: Blog"
+    },
+    {
+      "pathname": "/blog/tag/links",
+      "type": "tag",
+      "title": "Exif: Blog"
+    },
+    {
+      "pathname": "/blog/breathing-well",
+      "type": "blog-post",
+      "title": "Exif: Blog"
+    },
+    {
+      "pathname": "/now.html",
+      "type": "static-html",
+      "title": "abhijithkeyaar: Now"
+    },
+    {
+      "pathname": "/files/typography2/KR-20210412-NIDV-Typography2-CourseAbstract.pdf",
+      "type": "page",
+      "title": "Typography 2"
+    },
+    {
+      "pathname": "/blog/televised",
+      "type": "blog-post",
+      "title": "Exif: Blog"
+    },
+    {
+      "pathname": "/blog/misterrawboat",
+      "type": "blog-post",
+      "title": "Exif: Blog"
+    },
+    {
+      "pathname": "/blog/sidewalks",
+      "type": "blog-post",
+      "title": "Exif: Blog"
+    },
+    {
+      "pathname": "/blog/tag/home",
+      "type": "tag",
+      "title": "Exif: Blog"
+    },
+    {
+      "pathname": "/blog/reshummers",
+      "type": "blog-post",
+      "title": "Exif: Blog"
+    },
+    {
+      "pathname": "/blog/signs-of-the-times",
+      "type": "blog-post",
+      "title": "Exif: Blog"
+    },
+    {
+      "pathname": "/blog/on-lists",
+      "type": "blog-post",
+      "title": "Exif: Blog"
+    },
+    {
+      "pathname": "/blog/tag/poppy",
+      "type": "tag",
+      "title": "Exif: Blog"
+    },
+    {
+      "pathname": "/blog/tag/kalyani",
+      "type": "tag",
+      "title": "Exif: Blog"
+    },
+    {
+      "pathname": "/blog/input-and-kadalacurry",
+      "type": "blog-post",
+      "title": "Exif: Blog"
+    },
+    {
+      "pathname": "/files/layoutdesign/KR-20200116-WSAD-LayoutDesign-CourseAbstract.pdf",
+      "type": "page",
+      "title": "With Students of Semester 5"
+    },
+    {
+      "pathname": "/blog/serendipity-now",
+      "type": "blog-post",
+      "title": "Exif: Blog"
+    },
+    {
+      "pathname": "/blog/viva-panjim",
+      "type": "blog-post",
+      "title": "Exif: Blog"
+    },
+    {
+      "pathname": "/blog/num",
+      "type": "blog-post",
+      "title": "Exif: Blog"
+    },
+    {
+      "pathname": "/blog/new-web-thing",
+      "type": "blog-post",
+      "title": "Exif: Blog"
+    },
+    {
+      "pathname": "/type2/exercisebriefs",
+      "type": "page",
+      "title": "- abhijithkeyaar: pixels and ink"
+    },
+    {
+      "pathname": "/type2",
+      "type": "page",
+      "title": "- abhijithkeyaar: pixels and ink"
+    },
+    {
+      "pathname": "/blog/it-flows",
+      "type": "blog-post",
+      "title": "Exif: Blog"
+    },
+    {
+      "pathname": "/blog/to-print-shop-with-love",
+      "type": "blog-post",
+      "title": "Exif: Blog"
+    },
+    {
+      "pathname": "/blog/other-places",
+      "type": "blog-post",
+      "title": "Exif: Blog"
+    },
+    {
+      "pathname": "/blog/news",
+      "type": "blog-post",
+      "title": "Exif: Blog"
+    },
+    {
+      "pathname": "/blog/sometime-last-year-my-diwali-gifted-smartphone-kissed-an-elevator-floor",
+      "type": "blog-post",
+      "title": "Exif: Blog"
+    },
+    {
+      "pathname": "/blog/early-mornings-at-kl11-light-rain-schoolkids-hanging-onto-their",
+      "type": "blog-post",
+      "title": "Exif: Blog"
+    },
+    {
+      "pathname": "/humans.txt",
+      "type": "page",
+      "title": "Designed and built with basic HTML, CSS, and Bludit for the blog. Does not use trackers; I respect your privacy as much as my own."
+    },
+    {
+      "pathname": "/blog/hats",
+      "type": "blog-post",
+      "title": "Exif: Blog"
+    },
+    {
+      "pathname": "/blog/covet",
+      "type": "blog-post",
+      "title": "Exif: Blog"
+    },
+    {
+      "pathname": "/blog/the-little-brother-and-the-little-sister",
+      "type": "blog-post",
+      "title": "Exif: Blog"
+    },
+    {
+      "pathname": "/email",
+      "type": "page",
+      "title": "- abhijithkeyaar: pixels and ink"
+    },
+    {
+      "pathname": "/blog/singing-the-body-apocalyptic",
+      "type": "blog-post",
+      "title": "Exif: Blog"
+    },
+    {
+      "pathname": "/blog/moonrise-in-kuppady",
+      "type": "blog-post",
+      "title": "Exif: Blog"
+    },
+    {
+      "pathname": "/blog/breathe",
+      "type": "blog-post",
+      "title": "Exif: Blog"
+    },
+    {
+      "pathname": "/blog/walkzen-apologies",
+      "type": "blog-post",
+      "title": "Exif: Blog"
+    },
+    {
+      "pathname": "/blog/violins-in-kamkol",
+      "type": "blog-post",
+      "title": "Exif: Blog"
+    },
+    {
+      "pathname": "/blog/patience-nts-and-scissors",
+      "type": "blog-post",
+      "title": "Exif: Blog"
+    },
+    {
+      "pathname": "/blog/and-to-fight-for-a-cause-theyve-long-ago-forgotten",
+      "type": "blog-post",
+      "title": "Exif: Blog"
+    },
+    {
+      "pathname": "/blog/euler-than-thou",
+      "type": "blog-post",
+      "title": "Exif: Blog"
+    },
+    {
+      "pathname": "/blog/pugge",
+      "type": "blog-post",
+      "title": "Exif: Blog"
+    },
+    {
+      "pathname": "/blog/bus-stops-and-cake",
+      "type": "blog-post",
+      "title": "Exif: Blog"
+    },
+    {
+      "pathname": "/blog/421-501",
+      "type": "blog-post",
+      "title": "Exif: Blog"
+    },
+    {
+      "pathname": "/blog/leaves-falling",
+      "type": "blog-post",
+      "title": "Exif: Blog"
+    },
+    {
+      "pathname": "/blog/new-leaves",
+      "type": "blog-post",
+      "title": "Exif: Blog"
+    },
+    {
+      "pathname": "/blog/tag/we-seeded-the-clouds-and-it-rained",
+      "type": "tag",
+      "title": "Exif: Blog"
+    },
+    {
+      "pathname": "/blog/we-seeded-the-clouds-and-it-rained",
+      "type": "blog-post",
+      "title": "Exif: Blog"
+    },
+    {
+      "pathname": "/blog/the-revolution-will-be-rac-and-it-will-be-too-late-for-a-tatkal-ticket-anyway",
+      "type": "blog-post",
+      "title": "Exif: Blog"
+    },
+    {
+      "pathname": "/blog/everything-horizontal-is-now-vertical",
+      "type": "blog-post",
+      "title": "Exif: Blog"
+    },
+    {
+      "pathname": "/blog/this-scanner-bed-deserves-colin",
+      "type": "blog-post",
+      "title": "Exif: Blog"
+    },
+    {
+      "pathname": "/blog/touching-things",
+      "type": "blog-post",
+      "title": "Exif: Blog"
+    },
+    {
+      "pathname": "/blog/free-as-in-freedom",
+      "type": "blog-post",
+      "title": "Exif: Blog"
+    },
+    {
+      "pathname": "/blog/supreme-court-rules",
+      "type": "blog-post",
+      "title": "Exif: Blog"
+    },
+    {
+      "pathname": "/blog/as-in-free-sambharam",
+      "type": "blog-post",
+      "title": "Exif: Blog"
+    },
+    {
+      "pathname": "/blog/pigeons",
+      "type": "blog-post",
+      "title": "Exif: Blog"
+    },
+    {
+      "pathname": "/blog/the-fields-are-white-and-the-traffic-is-okay",
+      "type": "blog-post",
+      "title": "Exif: Blog"
+    },
+    {
+      "pathname": "/blog/lakkidi-through-the-mist",
+      "type": "blog-post",
+      "title": "Exif: Blog"
+    },
+    {
+      "pathname": "/blog/autosave-cea9243e67fa162f2b4af098711120fa",
+      "type": "blog-post",
+      "title": "Exif: Blog"
+    },
+    {
+      "pathname": "/blog/relingos",
+      "type": "blog-post",
+      "title": "Exif: Blog"
+    },
+    {
+      "pathname": "/blog/on-cultists",
+      "type": "blog-post",
+      "title": "Exif: Blog"
+    },
+    {
+      "pathname": "/blog/on-style-style-is-not-to-be-trusted",
+      "type": "blog-post",
+      "title": "Exif: Blog"
+    },
+    {
+      "pathname": "/blog/514-pine",
+      "type": "blog-post",
+      "title": "Exif: Blog"
+    },
+    {
+      "pathname": "/blog/the-stuff-of-liff-versus-the-liff-of-stuff",
+      "type": "blog-post",
+      "title": "Exif: Blog"
+    },
+    {
+      "pathname": "/blog/lotr-1987",
+      "type": "blog-post",
+      "title": "Exif: Blog"
+    },
+    {
+      "pathname": "/files/10Rules.html",
+      "type": "static-html",
+      "title": "Ten Rules (1967–1968)"
+    }
+  ]
+}

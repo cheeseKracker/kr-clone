@@ -1,0 +1,9 @@
+:root {
+  --token-font-primary: var(--font-ibm-plex-mono), ui-monospace, SFMono-Regular, Menlo,
+    Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --token-color-bg: #ffffee;
+  --token-color-link: #0022ff;
+  --token-color-link-hover: #ff0000;
+  --token-size-base: 18px;
+  --token-line-height-base: 1.65;
+}
