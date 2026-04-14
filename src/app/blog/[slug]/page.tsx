@@ -25,7 +25,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
   }
 
   return (
-    <SiteShell title={page.title}>
+    <SiteShell variant="blog" showPrimaryNav={false}>
       <ExifBlogNav />
       <PageMarkdown content={page.markdown} />
     </SiteShell>

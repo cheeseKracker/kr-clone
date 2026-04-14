@@ -8,7 +8,7 @@ export default function BlogIndexPage() {
   const posts = getBlogPosts();
 
   return (
-    <SiteShell title={page?.title ?? "Blog"}>
+    <SiteShell variant="blog" showPrimaryNav={false}>
       <ExifBlogNav />
       <PostList posts={posts} />
       <small className="meta-note">

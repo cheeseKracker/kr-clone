@@ -39,6 +39,25 @@ a:hover {
   padding: 1.5rem 1rem 3rem;
 }
 
+.site-root--blog {
+  background: #050505;
+  color: #9ea0a6;
+}
+
+.site-root--blog .site-main {
+  max-width: 44rem;
+}
+
+.site-root--blog .page-markdown p,
+.site-root--blog .page-markdown li,
+.site-root--blog .page-markdown {
+  color: #9ea0a6;
+}
+
+.site-root--blog .meta-note {
+  color: #8f9198;
+}
+
 .site-header {
   max-width: 46rem;
   margin: 0 auto 1.25rem;

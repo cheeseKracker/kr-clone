@@ -16,9 +16,8 @@ export function generateStaticParams() {
 
 export default async function TagPage({ params }: TagPageProps) {
   const { tag } = await params;
-  const title = `Tag: ${tag}`;
   return (
-    <SiteShell title={title}>
+    <SiteShell variant="blog" showPrimaryNav={false}>
       <ExifBlogNav />
       <p>
         Tag archive page for <strong>{tag}</strong>.
