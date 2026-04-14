@@ -19,20 +19,37 @@ export type SitePage = {
   links: string[];
 };
 
+function normalizePath(pathname: string) {
+  if (!pathname) return "/";
+  if (pathname !== "/" && pathname.endsWith("/")) {
+    return pathname.slice(0, -1);
+  }
+  return pathname;
+}
+
 export function getAllPages(): SitePage[] {
   return siteContent.pages as SitePage[];
 }
 
 export function getRouteManifest() {
-  return routeManifest.routes as Array<{
+  const routes = routeManifest.routes as Array<{
     pathname: string;
     type: PageType;
     title: string;
   }>;
+
+  const seen = new Set<string>();
+  return routes.filter((route) => {
+    const key = `${route.type}:${normalizePath(route.pathname)}`;
+    if (seen.has(key)) return false;
+    seen.add(key);
+    return true;
+  });
 }
 
 export function findPageByPath(pathname: string): SitePage | undefined {
-  return getAllPages().find((page) => page.pathname === pathname);
+  const target = normalizePath(pathname);
+  return getAllPages().find((page) => normalizePath(page.pathname) === target);
 }
 
 export function getBlogPosts() {

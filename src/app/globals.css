@@ -91,3 +91,26 @@ a:hover {
   font-size: 0.95rem;
   opacity: 0.85;
 }
+
+.exif-nav {
+  margin: 0 0 1.25rem;
+  padding: 0.75rem;
+  background: #050505;
+  border: 1px solid #0e0e0e;
+}
+
+.exif-nav-title {
+  margin: 0 0 0.8rem;
+  color: #12a4ff;
+  font-weight: 600;
+}
+
+.exif-nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.9rem;
+}
+
+.exif-nav-links a {
+  color: #12a4ff;
+}

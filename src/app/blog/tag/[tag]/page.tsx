@@ -1,3 +1,4 @@
+import ExifBlogNav from "@/components/exif-blog-nav";
 import SiteShell from "@/components/site-shell";
 import { getRouteManifest } from "@/lib/content";
 
@@ -18,6 +19,7 @@ export default async function TagPage({ params }: TagPageProps) {
   const title = `Tag: ${tag}`;
   return (
     <SiteShell title={title}>
+      <ExifBlogNav />
       <p>
         Tag archive page for <strong>{tag}</strong>.
       </p>

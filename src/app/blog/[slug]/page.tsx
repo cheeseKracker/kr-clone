@@ -1,4 +1,5 @@
 import { notFound } from "next/navigation";
+import ExifBlogNav from "@/components/exif-blog-nav";
 import PageMarkdown from "@/components/page-markdown";
 import SiteShell from "@/components/site-shell";
 import { findPageByPath, getRouteManifest } from "@/lib/content";
@@ -25,6 +26,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
 
   return (
     <SiteShell title={page.title}>
+      <ExifBlogNav />
       <PageMarkdown content={page.markdown} />
     </SiteShell>
   );
