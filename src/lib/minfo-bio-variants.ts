@@ -1,11 +1,11 @@
-const BIO_HEADER = `[**Bio**](https://keyaar.in/blog/minfo)
+const BIO_HEADER = `[**Bio**](https://portofliokarak.vercel.app/blog/minfo)
 
 →
 September 27, 2020 \\| Reading time: 8 minutes
 `;
 
 const BIO_FOOTER = `
-[Read More…](https://keyaar.in/blog/minfo)
+[Read More…](https://portofliokarak.vercel.app/blog/minfo)
 
 - [Home](/blog)
 - [Older Posts →](/blog/minfo)

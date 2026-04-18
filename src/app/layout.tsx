@@ -10,8 +10,8 @@ const ibmPlexMono = IBM_Plex_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "abhijithkeyaar: pixels + ink",
-  description: "Clone of keyaar.in using Next.js",
+  title: "portofliokarak",
+  description: "Personal site hosted at portofliokarak.vercel.app",
 };
 
 export default function RootLayout({

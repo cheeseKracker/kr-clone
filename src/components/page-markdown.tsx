@@ -12,7 +12,7 @@ function toLocalHref(href?: string) {
   try {
     const parsed = new URL(href);
     const host = parsed.hostname.replace(/^www\./, "");
-    if (host === "keyaar.in") {
+    if (host === "keyaar.in" || host === "portofliokarak.vercel.app") {
       return `${parsed.pathname}${parsed.search}${parsed.hash}`;
     }
   } catch {
@@ -30,7 +30,7 @@ export default function PageMarkdown({ content }: PageMarkdownProps) {
           a: ({ href, children, ...props }) => {
             const nextHref = toLocalHref(href);
             const external = Boolean(
-              nextHref && /^https?:\/\//i.test(nextHref) && !nextHref.includes("keyaar.in"),
+              nextHref && /^https?:\/\//i.test(nextHref) && !nextHref.includes("keyaar.in") && !nextHref.includes("portofliokarak.vercel.app"),
             );
             return (
               <a

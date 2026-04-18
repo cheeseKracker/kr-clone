@@ -39,6 +39,13 @@ a:hover {
   padding: 1.5rem 1rem 3rem;
 }
 
+@media (max-width: 640px) {
+  .site-root {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
 .site-root--blog {
   background: #050505;
   color: #9ea0a6;
