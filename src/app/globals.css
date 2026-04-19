@@ -34,6 +34,14 @@ a:hover {
   color: var(--keyaar-red);
 }
 
+.site-root:not(.site-root--root) a {
+  color: #0088ff;
+}
+
+.site-root:not(.site-root--root) a:hover {
+  color: var(--keyaar-red);
+}
+
 .site-root {
   min-height: 100vh;
   padding: 1.5rem 1rem 3rem;
@@ -129,11 +137,13 @@ a:hover {
   border: 1px solid #0e0e0e;
 }
 
-.site-root--blog .site-main.site-main--minfo .exif-nav {
+.site-root--blog .exif-nav {
+  max-width: min(1400px, calc(100vw - 2rem));
+  margin-left: auto;
+  margin-right: auto;
   padding: 0.35rem 0 0.9rem;
   background: transparent;
   border: 0;
-  border-top: 3px solid #5f8db8;
 }
 
 .site-root--blog .site-main.site-main--minfo .page-markdown > * {
@@ -159,7 +169,7 @@ a:hover {
 }
 
 .exif-nav-links a {
-  color: #12a4ff;
+  color: #0088ff;
 }
 
 .exif-nav-links a:hover {

@@ -6,7 +6,7 @@ export default function Home() {
   const page = findPageByPath("/");
 
   return (
-    <SiteShell>
+    <SiteShell pageRole="root">
       <PageMarkdown content={page?.markdown ?? "Homepage content unavailable."} />
     </SiteShell>
   );

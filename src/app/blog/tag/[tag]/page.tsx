@@ -20,8 +20,7 @@ export default async function TagPage({ params }: TagPageProps) {
   const page = findPageByPath(`/blog/tag/${tag}`);
 
   return (
-    <SiteShell variant="blog" showPrimaryNav={false}>
-      <ExifBlogNav />
+    <SiteShell variant="blog" showPrimaryNav={false} topContent={<ExifBlogNav />}>
       <PageMarkdown
         content={page?.markdown ?? `Tag archive page for **${tag}** is unavailable.`}
       />

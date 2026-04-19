@@ -27,8 +27,7 @@ export default async function MinfoPage() {
 
   if (MINFO_BIO_VARIANTS.length === 0) {
     return (
-      <SiteShell variant="blog" showPrimaryNav={false}>
-        <ExifBlogNav />
+      <SiteShell variant="blog" showPrimaryNav={false} topContent={<ExifBlogNav />}>
         <PageMarkdown content={page?.markdown ?? "Bio content unavailable."} />
       </SiteShell>
     );
@@ -46,10 +45,10 @@ export default async function MinfoPage() {
     <SiteShell
       variant="blog"
       showPrimaryNav={false}
+      topContent={<ExifBlogNav />}
       mainClassName="site-main--minfo"
     >
       <MinfoCookieSync variantIndex={nextIndex} />
-      <ExifBlogNav />
       <PageMarkdown content={MINFO_BIO_VARIANTS[nextIndex]} />
     </SiteShell>
   );

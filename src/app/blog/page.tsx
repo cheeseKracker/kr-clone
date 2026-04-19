@@ -7,8 +7,7 @@ export default function BlogIndexPage() {
   const page = findPageByPath("/blog");
 
   return (
-    <SiteShell variant="blog" showPrimaryNav={false}>
-      <ExifBlogNav />
+    <SiteShell variant="blog" showPrimaryNav={false} topContent={<ExifBlogNav />}>
       <PageMarkdown content={page?.markdown ?? "Blog content unavailable."} />
     </SiteShell>
   );
