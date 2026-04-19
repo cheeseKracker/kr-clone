@@ -43,7 +43,11 @@ export default async function MinfoPage() {
   );
 
   return (
-    <SiteShell variant="blog" showPrimaryNav={false}>
+    <SiteShell
+      variant="blog"
+      showPrimaryNav={false}
+      mainClassName="site-main--minfo"
+    >
       <MinfoCookieSync variantIndex={nextIndex} />
       <ExifBlogNav />
       <PageMarkdown content={MINFO_BIO_VARIANTS[nextIndex]} />

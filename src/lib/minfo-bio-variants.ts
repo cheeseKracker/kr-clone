@@ -4,13 +4,6 @@ const BIO_HEADER = `[**Bio**](https://portofliokarak.vercel.app/blog/minfo)
 September 27, 2020 \\| Reading time: 8 minutes
 `;
 
-const BIO_FOOTER = `
-[Read More…](https://portofliokarak.vercel.app/blog/minfo)
-
-- [Home](/blog)
-- [Older Posts →](/blog/minfo)
-`;
-
 const BIO_VARIANT_BODIES = [
   `An obsessive misreader of (other) people’s minds, Abhijith spends his free time away from civilisation in a house built on the banks of Subarnarekha (by early goldminers looking to perfect the art of washing their gamchas in the silty waters).
 
@@ -35,5 +28,5 @@ He wishes he could tell prospective clients where he is going next, but cheaping
 ];
 
 export const MINFO_BIO_VARIANTS = BIO_VARIANT_BODIES.map(
-  (body) => `${BIO_HEADER}\n\n${body}\n\n${BIO_FOOTER}`.trim(),
+  (body) => `${BIO_HEADER}\n\n${body}`.trim(),
 );

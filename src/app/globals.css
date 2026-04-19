@@ -55,6 +55,10 @@ a:hover {
   max-width: 44rem;
 }
 
+.site-root--blog .site-main.site-main--minfo {
+  max-width: min(1400px, calc(100vw - 2rem));
+}
+
 .site-root--blog .page-markdown p,
 .site-root--blog .page-markdown li,
 .site-root--blog .page-markdown {
@@ -125,6 +129,23 @@ a:hover {
   border: 1px solid #0e0e0e;
 }
 
+.site-root--blog .site-main.site-main--minfo .exif-nav {
+  padding: 0.35rem 0 0.9rem;
+  background: transparent;
+  border: 0;
+  border-top: 3px solid #5f8db8;
+}
+
+.site-root--blog .site-main.site-main--minfo .page-markdown > * {
+  width: min(800px, calc(100% - 40px));
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.site-root--blog .site-main.site-main--minfo .page-markdown > ul {
+  padding-left: 1.25rem;
+}
+
 .exif-nav-title {
   margin: 0 0 0.8rem;
   color: #12a4ff;
@@ -139,4 +160,8 @@ a:hover {
 
 .exif-nav-links a {
   color: #12a4ff;
+}
+
+.exif-nav-links a:hover {
+  color: var(--keyaar-red);
 }
