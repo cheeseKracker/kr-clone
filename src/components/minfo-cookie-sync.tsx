@@ -8,7 +8,16 @@ export default function MinfoCookieSync({
   variantIndex: number;
 }) {
   useEffect(() => {
-    document.cookie = `minfo_last=${variantIndex}; path=/blog/minfo; max-age=${60 * 60 * 24 * 365}; samesite=lax`;
+    const cookieValue = `minfo_last=${variantIndex}; path=/; max-age=${60 * 60 * 24 * 365}; samesite=lax`;
+
+    console.log("[minfo] client sync cookie", {
+      variantIndex,
+      pathname: window.location.pathname,
+      hostname: window.location.hostname,
+      cookieValue,
+    });
+
+    document.cookie = cookieValue;
   }, [variantIndex]);
 
   useEffect(() => {
@@ -18,12 +27,16 @@ export default function MinfoCookieSync({
       )[0] as PerformanceNavigationTiming | undefined;
 
       if (navigationEntry?.type === "back_forward") {
+        console.log("[minfo] reloading after history restore", {
+          navigationType: navigationEntry.type,
+        });
         window.location.reload();
       }
     };
 
     const handlePageShow = (event: PageTransitionEvent) => {
       if (event.persisted) {
+        console.log("[minfo] reloading after persisted pageshow");
         window.location.reload();
       }
     };

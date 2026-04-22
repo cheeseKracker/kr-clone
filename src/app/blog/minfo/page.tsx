@@ -41,6 +41,14 @@ export default async function MinfoPage() {
     Number.isFinite(lastIndex) ? lastIndex : -1,
   );
 
+  console.log("[minfo] server render", {
+    cookieName: MINFO_COOKIE_NAME,
+    lastRaw,
+    lastIndex: Number.isFinite(lastIndex) ? lastIndex : -1,
+    nextIndex,
+    variantCount: MINFO_BIO_VARIANTS.length,
+  });
+
   return (
     <SiteShell
       variant="blog"
