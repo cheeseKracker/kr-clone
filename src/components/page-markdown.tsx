@@ -45,6 +45,9 @@ export default function PageMarkdown({ content }: PageMarkdownProps) {
           },
           img: ({ src, alt, ...props }) => {
             const nextSrc = typeof src === "string" ? toLocalHref(src) : undefined;
+            // Markdown content can contain arbitrary local and remote images without dimensions.
+            // Keep a plain img here rather than forcing Next Image into unsuitable content.
+            // eslint-disable-next-line @next/next/no-img-element
             return <img src={nextSrc} alt={alt ?? ""} loading="lazy" {...props} />;
           },
         }}

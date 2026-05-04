@@ -8,9 +8,7 @@ export default function ExifBlogNav() {
       <p className="exif-nav-title">Exif: Blog</p>
       <nav className="exif-nav-links" aria-label="Exif Blog Links">
         <Link href="/">Root</Link>
-        <a href="/blog/minfo">
-          Is This Normal?
-        </a>
+        <Link href="/blog/minfo">Is This Normal?</Link>
         <Link href="/blog/dog-years">Bookshelf</Link>
         <Link href="/sandbox">Old Projects</Link>
         <Link href="/blog/uses">Gear</Link>
