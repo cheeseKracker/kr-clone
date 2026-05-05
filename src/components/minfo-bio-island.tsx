@@ -1,14 +1,13 @@
 "use client";
 
-import dynamic from "next/dynamic";
-import PageMarkdown from "@/components/page-markdown";
-import { MINFO_BIO_VARIANTS } from "@/lib/minfo-bio-variants";
+import MinfoBioClient from "./minfo-bio-client";
 
-const MinfoBioClient = dynamic(() => import("./minfo-bio-client"), {
-  ssr: false,
-  loading: () => <PageMarkdown content={MINFO_BIO_VARIANTS[0]} />,
-});
+type MinfoBioIslandProps = {
+  initialVariantIndex: number;
+};
 
-export default function MinfoBioIsland() {
-  return <MinfoBioClient />;
+export default function MinfoBioIsland({
+  initialVariantIndex,
+}: MinfoBioIslandProps) {
+  return <MinfoBioClient initialVariantIndex={initialVariantIndex} />;
 }

@@ -17,3 +17,14 @@ const BIO_VARIANT_BODIES = [
 export const MINFO_BIO_VARIANTS = BIO_VARIANT_BODIES.map(
   (body) => `${BIO_HEADER}\n\n${body}`.trim(),
 );
+
+export function pickDifferentMinfoBioVariant(lastIndex: number): number {
+  const total = MINFO_BIO_VARIANTS.length;
+  if (total <= 1) return 0;
+
+  let next = 0;
+  do {
+    next = Math.floor(Math.random() * total);
+  } while (next === lastIndex);
+  return next;
+}
