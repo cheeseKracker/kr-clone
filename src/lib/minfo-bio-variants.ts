@@ -1,7 +1,4 @@
-const BIO_HEADER = `[**Bio**](https://portofliokarak.vercel.app/blog/minfo)
-
-→
-September 27, 2020 \\| Reading time: 8 minutes
+const BIO_HEADER = `→ Last Updated May 17, 2026
 `;
 
 const BIO_VARIANT_BODIES = [
