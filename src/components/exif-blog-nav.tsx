@@ -12,7 +12,6 @@ export default function ExifBlogNav() {
         <Link href="/blog/dog-years">Bookshelf</Link>
         <Link href="/sandbox">Old Projects</Link>
         <Link href="/blog/uses">Gear</Link>
-        <Link href="/blog/teaching">Teaching</Link>
         <a href="https://www.yourworldoftext.com/~keyaar/" target="_blank" rel="noreferrer noopener">
           Say Hi!
         </a>
