@@ -40,3 +40,11 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 .env*.local
+
+# crawl artifacts (if regenerated)
+/scripts/crawl/
+/data/raw/
+/data/normalized/
+
+# claude code session data
+/claude/

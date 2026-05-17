@@ -6,13 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint",
-    "crawl:discover": "node scripts/crawl/discover.mjs",
-    "crawl:scrape": "node scripts/crawl/scrape.mjs",
-    "crawl:normalize": "node scripts/crawl/normalize.mjs",
-    "crawl:assets": "node scripts/crawl/mirror-assets.mjs",
-    "crawl:coverage": "node scripts/crawl/coverage.mjs",
-    "crawl:all": "npm run crawl:discover && npm run crawl:scrape && npm run crawl:normalize && npm run crawl:assets && npm run crawl:coverage"
+    "lint": "eslint"
   },
   "dependencies": {
     "@vercel/analytics": "^2.0.1",

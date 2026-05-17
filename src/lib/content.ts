@@ -1,5 +1,4 @@
 import siteContent from "../../content/site-content.json";
-import routeManifest from "../../data/normalized/routes.json";
 
 export type PageType =
   | "home"
@@ -32,11 +31,12 @@ export function getAllPages(): SitePage[] {
 }
 
 export function getRouteManifest() {
-  const routes = routeManifest.routes as Array<{
-    pathname: string;
-    type: PageType;
-    title: string;
-  }>;
+  const pages = getAllPages();
+  const routes = pages.map((page) => ({
+    pathname: page.pathname,
+    type: page.type,
+    title: page.title,
+  }));
 
   const seen = new Set<string>();
   return routes.filter((route) => {
