@@ -60,11 +60,17 @@ a:hover {
 }
 
 .site-root--blog .site-main {
-  max-width: 44rem;
+  max-width: min(1400px, calc(100vw - 2rem));
 }
 
-.site-root--blog .site-main.site-main--minfo {
-  max-width: min(1400px, calc(100vw - 2rem));
+.site-root--blog .site-main .page-markdown > * {
+  width: min(800px, calc(100% - 40px));
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.site-root--blog .site-main .page-markdown > ul {
+  padding-left: 1.25rem;
 }
 
 .site-root--blog .page-markdown p,
@@ -146,14 +152,12 @@ a:hover {
   border: 0;
 }
 
-.site-root--blog .site-main.site-main--minfo .page-markdown > * {
-  width: min(800px, calc(100% - 40px));
-  margin-left: auto;
-  margin-right: auto;
+.site-root--blog .site-main .page-markdown table tbody tr:nth-child(even) {
+  background-color: #1F1F1F;
 }
 
-.site-root--blog .site-main.site-main--minfo .page-markdown > ul {
-  padding-left: 1.25rem;
+.site-root--blog .site-main .page-markdown table tbody tr:nth-child(odd) {
+  background-color: transparent;
 }
 
 .exif-nav-title {
