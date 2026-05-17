@@ -160,6 +160,14 @@ a:hover {
   background-color: transparent;
 }
 
+.site-main--dog-years table td {
+  padding: 0.6rem 0.5rem;
+}
+
+.site-main--dog-years table tr {
+  line-height: 1.4;
+}
+
 .exif-nav-title {
   margin: 0 0 0.8rem;
   color: #12a4ff;
