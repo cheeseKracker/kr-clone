@@ -1,5 +1,4 @@
 ---
-slug: "linear-red-and-thockallove"
 title: "Linear, Red, and ThockAllOver"
 date: "2025-02-09"
 displayDate: "February 9, 2025"

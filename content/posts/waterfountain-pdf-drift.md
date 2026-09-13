@@ -1,5 +1,4 @@
 ---
-slug: "waterfountain-pdf-drift"
 title: "WaterFountain: PDF Drift"
 date: "2021-02-11"
 displayDate: "February 11, 2021"

@@ -1,5 +1,4 @@
 ---
-slug: "euler-than-thou"
 title: "Euler Than Thou"
 date: "2019-09-20"
 displayDate: "September 20, 2019"

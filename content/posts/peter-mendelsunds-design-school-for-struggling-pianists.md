@@ -1,5 +1,4 @@
 ---
-slug: "peter-mendelsunds-design-school-for-struggling-pianists"
 title: "Peter Mendelsund’s Design School for Struggling Pianists"
 date: "2019-08-08"
 displayDate: "August 8, 2019"

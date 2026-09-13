@@ -1,5 +1,4 @@
 ---
-slug: "f00-is-the-warmest-colour"
 title: "\\#F00 is the Warmest Colour"
 date: "2019-09-14"
 displayDate: "September 14, 2019"

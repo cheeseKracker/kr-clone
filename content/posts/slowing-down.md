@@ -1,5 +1,4 @@
 ---
-slug: "slowing-down"
 title: "Slowing Down"
 date: "2018-05-30"
 displayDate: "May 30, 2018"

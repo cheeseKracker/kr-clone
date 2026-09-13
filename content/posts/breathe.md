@@ -1,5 +1,4 @@
 ---
-slug: "breathe"
 title: "Breath Becomes Air"
 date: "2021-04-30"
 displayDate: "April 30, 2021"

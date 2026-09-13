@@ -1,5 +1,4 @@
 ---
-slug: "violins-in-kamkol"
 title: "Violins in Kamkol"
 date: "2020-01-28"
 displayDate: "January 28, 2020"

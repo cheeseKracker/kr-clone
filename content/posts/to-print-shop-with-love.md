@@ -1,5 +1,4 @@
 ---
-slug: "to-print-shop-with-love"
 title: "To the Print-shop, With Love"
 date: "2021-12-27"
 displayDate: "December 27, 2021"

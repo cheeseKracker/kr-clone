@@ -1,5 +1,4 @@
 ---
-slug: "fonts-typefaces-etcetera"
 title: "On Being Able to Tell the Water from the Fountain: A Discussion on the Fonts-Typefaces-Conundrum"
 date: "2021-01-26"
 displayDate: "January 26, 2021"

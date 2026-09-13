@@ -1,5 +1,4 @@
 ---
-slug: "tiny-atrocities"
 title: "Tiny Atrocities"
 date: "2021-05-19"
 displayDate: "May 19, 2021"

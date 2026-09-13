@@ -1,5 +1,4 @@
 ---
-slug: "dog-years"
 title: "Dog Years: The Quantified Shelf"
 date: "2026-05-17"
 displayDate: "May 17, 2026"

@@ -1,5 +1,4 @@
 ---
-slug: "sometime-last-year-my-diwali-gifted-smartphone-kissed-an-elevator-floor"
 date: "2017-10-14"
 displayDate: "October 14, 2017"
 readingMinutes: 4

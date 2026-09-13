@@ -1,5 +1,4 @@
 ---
-slug: "voluntary-simplicty"
 title: "Voluntary Simplicty"
 date: "2018-11-11"
 displayDate: "November 11, 2018"

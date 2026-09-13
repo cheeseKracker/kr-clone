@@ -1,5 +1,4 @@
 ---
-slug: "pigeons"
 title: "Pigeons"
 date: "2017-07-29"
 displayDate: "July 29, 2017"

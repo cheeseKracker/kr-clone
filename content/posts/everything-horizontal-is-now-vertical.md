@@ -1,5 +1,4 @@
 ---
-slug: "everything-horizontal-is-now-vertical"
 title: "Everything Horizontal is Now Vertical."
 date: "2024-10-11"
 displayDate: "October 11, 2024"

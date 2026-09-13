@@ -1,5 +1,4 @@
 ---
-slug: "514-pine"
 title: "514, Pine"
 date: "2019-10-26"
 displayDate: "October 26, 2019"

@@ -1,5 +1,4 @@
 ---
-slug: "supreme-court-rules"
 title: "Supreme Court Rules"
 date: "2017-08-24"
 displayDate: "August 24, 2017"

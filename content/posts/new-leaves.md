@@ -1,5 +1,4 @@
 ---
-slug: "new-leaves"
 title: "New Leaves"
 date: "2018-08-02"
 displayDate: "August 2, 2018"

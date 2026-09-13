@@ -1,5 +1,4 @@
 ---
-slug: "the-best-love-letters-are-the-ones-past-their-send-by-date"
 title: "The Best Love-letters are the Ones Past Their Send-by Dates"
 date: "2019-10-13"
 displayDate: "October 13, 2019"

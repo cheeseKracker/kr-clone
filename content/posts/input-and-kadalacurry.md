@@ -1,5 +1,4 @@
 ---
-slug: "input-and-kadalacurry"
 title: "Input and KadalaCurry We Believe"
 date: "2025-04-29"
 displayDate: "April 29, 2025"

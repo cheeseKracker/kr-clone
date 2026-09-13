@@ -1,5 +1,4 @@
 ---
-slug: "patience-nts-and-scissors"
 title: "Patience (nts?) and Scissors*"
 date: "2019-03-16"
 displayDate: "March 16, 2019"

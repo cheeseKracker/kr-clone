@@ -1,5 +1,4 @@
 ---
-slug: "two-wheels-and-some-juice"
 title: "Two Wheels and Some Juice"
 date: "2024-04-11"
 displayDate: "April 11, 2024"

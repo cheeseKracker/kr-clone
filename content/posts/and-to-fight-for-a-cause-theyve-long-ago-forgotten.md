@@ -1,5 +1,4 @@
 ---
-slug: "and-to-fight-for-a-cause-theyve-long-ago-forgotten"
 title: "🎜(And to fight for a cause they’ve long ago forgotten…)🎜"
 date: "2019-02-18"
 displayDate: "February 18, 2019"

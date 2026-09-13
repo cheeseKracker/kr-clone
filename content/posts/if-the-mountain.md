@@ -1,5 +1,4 @@
 ---
-slug: "if-the-mountain"
 title: "If the Mountain…"
 date: "2020-02-19"
 displayDate: "February 19, 2020"

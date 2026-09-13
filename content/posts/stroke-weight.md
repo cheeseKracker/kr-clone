@@ -1,5 +1,4 @@
 ---
-slug: "stroke-weight"
 title: "Stroke Weight"
 date: "2025-07-18"
 displayDate: "July 18, 2025"

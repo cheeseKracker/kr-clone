@@ -1,5 +1,4 @@
 ---
-slug: "free-as-in-freedom"
 title: "Free (As in Freedom)"
 date: "2018-11-12"
 displayDate: "November 12, 2018"

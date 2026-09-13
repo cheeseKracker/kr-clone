@@ -1,5 +1,4 @@
 ---
-slug: "televised"
 title: "Televised"
 date: "2016-02-22"
 displayDate: "February 22, 2016"

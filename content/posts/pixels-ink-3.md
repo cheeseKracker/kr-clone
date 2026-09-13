@@ -1,5 +1,4 @@
 ---
-slug: "pixels-ink-3"
 title: "Pixels & Ink \\#3"
 date: "2015-11-08"
 displayDate: "November 8, 2015"

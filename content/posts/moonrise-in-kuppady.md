@@ -1,5 +1,4 @@
 ---
-slug: "moonrise-in-kuppady"
 title: "Moonrise in Kuppady"
 date: "2023-01-01"
 displayDate: "January 1, 2023"

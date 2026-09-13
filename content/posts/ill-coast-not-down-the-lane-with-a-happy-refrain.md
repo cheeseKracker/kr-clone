@@ -1,5 +1,4 @@
 ---
-slug: "ill-coast-not-down-the-lane-with-a-happy-refrain"
 title: "I’ll coast (not!) down the lane with a happy refrain…"
 date: "2019-08-15"
 displayDate: "August 15, 2019"

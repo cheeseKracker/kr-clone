@@ -1,5 +1,4 @@
 ---
-slug: "granting-wishes"
 title: "G(R)anting Wishes"
 date: "2020-07-30"
 displayDate: "July 30, 2020"

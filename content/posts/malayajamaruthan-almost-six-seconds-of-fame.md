@@ -1,5 +1,4 @@
 ---
-slug: "malayajamaruthan-almost-six-seconds-of-fame"
 title: "MalayajaMaruthan: The Wind Blows"
 date: "2020-11-01"
 displayDate: "November 1, 2020"

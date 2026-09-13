@@ -1,5 +1,4 @@
 ---
-slug: "hats"
 title: "Hats"
 date: "2017-06-05"
 displayDate: "June 5, 2017"

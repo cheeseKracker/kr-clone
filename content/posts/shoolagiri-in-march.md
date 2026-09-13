@@ -1,5 +1,4 @@
 ---
-slug: "shoolagiri-in-march"
 title: "Shoolagiri in March"
 date: "2026-03-29"
 displayDate: "March 29, 2026"

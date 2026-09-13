@@ -1,5 +1,4 @@
 ---
-slug: "fullyautomatedluxuryonlinetypographytwo"
 title: "Fully Automated Luxury Online TypographyTwo"
 date: "2020-07-08"
 displayDate: "July 8, 2020"

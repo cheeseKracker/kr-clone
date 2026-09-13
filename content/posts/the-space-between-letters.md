@@ -1,5 +1,4 @@
 ---
-slug: "the-space-between-letters"
 title: "The Space Between Letters"
 date: "2025-08-19"
 displayDate: "August 19, 2025"

@@ -1,5 +1,4 @@
 ---
-slug: "the-fields-are-white-and-the-traffic-is-okay"
 title: "The Fields are White and the Traffic is Okay"
 date: "2024-01-24"
 displayDate: "January 24, 2024"

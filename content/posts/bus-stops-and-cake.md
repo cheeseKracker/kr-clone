@@ -1,5 +1,4 @@
 ---
-slug: "bus-stops-and-cake"
 title: "Bus Stops and Cake"
 date: "2018-11-11"
 displayDate: "November 11, 2018"

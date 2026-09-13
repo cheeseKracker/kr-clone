@@ -1,5 +1,4 @@
 ---
-slug: "num"
 title: "Numbers"
 date: "2023-04-01"
 displayDate: "April 1, 2023"

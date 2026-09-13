@@ -1,5 +1,4 @@
 ---
-slug: "uses"
 title: "Uses"
 date: "2024-07-29"
 displayDate: "July 29, 2024"

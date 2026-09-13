@@ -1,5 +1,4 @@
 ---
-slug: "minfo"
 title: "Bio"
 date: "2020-09-27"
 displayDate: "September 27, 2020"

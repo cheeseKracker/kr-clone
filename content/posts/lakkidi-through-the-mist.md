@@ -1,5 +1,4 @@
 ---
-slug: "lakkidi-through-the-mist"
 title: "Lakkidi Through the Mist"
 date: "2023-11-08"
 displayDate: "November 8, 2023"

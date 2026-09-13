@@ -1,5 +1,4 @@
 ---
-slug: "glass-houses"
 title: "Glass-houses"
 date: "2020-12-13"
 displayDate: "December 13, 2020"

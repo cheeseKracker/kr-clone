@@ -1,5 +1,4 @@
 ---
-slug: "4-in-the-morning-this-plus-ginger-tea-off-campus-all-the-right"
 date: "2016-11-06"
 displayDate: "November 6, 2016"
 readingMinutes: 1

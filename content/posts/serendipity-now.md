@@ -1,5 +1,4 @@
 ---
-slug: "serendipity-now"
 title: "Serendipity Now!"
 date: "2023-12-16"
 displayDate: "December 16, 2023"

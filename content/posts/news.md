@@ -1,5 +1,4 @@
 ---
-slug: "news"
 title: "News"
 date: "2018-01-13"
 displayDate: "January 13, 2018"

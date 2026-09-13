@@ -1,5 +1,4 @@
 ---
-slug: "infinite-gestalt"
 title: "Infinite Gestalt"
 date: "2023-07-17"
 displayDate: "July 17, 2023"

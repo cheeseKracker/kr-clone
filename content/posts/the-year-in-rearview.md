@@ -1,5 +1,4 @@
 ---
-slug: "the-year-in-rearview"
 title: "The TiffinBox in Rearview"
 date: "2025-02-05"
 displayDate: "February 5, 2025"

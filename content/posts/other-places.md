@@ -1,5 +1,4 @@
 ---
-slug: "other-places"
 title: "Other Places"
 date: "2018-12-06"
 displayDate: "December 6, 2018"

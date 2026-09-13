@@ -1,5 +1,4 @@
 ---
-slug: "memories-of-my-melancholy-chairs"
 title: "Memories of My Melancholy Chairs"
 date: "2017-03-20"
 displayDate: "March 20, 2017"

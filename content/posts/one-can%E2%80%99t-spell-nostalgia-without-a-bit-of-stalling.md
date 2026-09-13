@@ -1,5 +1,4 @@
 ---
-slug: "one-can%E2%80%99t-spell-nostalgia-without-a-bit-of-stalling"
 title: "One Can’t Spell Nostalgia Without a Bit of Stalling"
 date: "2025-07-02"
 displayDate: "July 2, 2025"

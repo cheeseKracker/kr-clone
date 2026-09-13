@@ -1,5 +1,4 @@
 ---
-slug: "shoulders-of-giants-1"
 title: "Shoulders of Giants (1)"
 date: "2019-04-03"
 displayDate: "April 3, 2019"

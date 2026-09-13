@@ -1,5 +1,4 @@
 ---
-slug: "on-cultists"
 title: "On Cult(ist)s"
 date: "2020-07-06"
 displayDate: "July 6, 2020"

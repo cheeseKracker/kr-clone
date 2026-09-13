@@ -1,5 +1,4 @@
 ---
-slug: "singing-the-body-apocalyptic"
 title: "Singing the Body Apocalyptic"
 date: "2017-03-31"
 displayDate: "March 31, 2017"

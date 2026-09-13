@@ -1,5 +1,4 @@
 ---
-slug: "drawing-water"
 title: "Drawing Water"
 date: "2017-07-18"
 displayDate: "July 18, 2017"

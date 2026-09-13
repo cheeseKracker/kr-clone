@@ -1,5 +1,4 @@
 ---
-slug: "rulz"
 title: "Rulz (?)"
 date: "2019-10-06"
 displayDate: "October 6, 2019"

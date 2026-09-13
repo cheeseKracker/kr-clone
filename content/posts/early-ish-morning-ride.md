@@ -1,5 +1,4 @@
 ---
-slug: "early-ish-morning-ride"
 title: "Early (ish) Morning Ride"
 date: "2023-04-09"
 displayDate: "April 9, 2023"

@@ -1,5 +1,4 @@
 ---
-slug: "on-lists"
 title: "On Lists"
 date: "2024-07-11"
 displayDate: "July 11, 2024"

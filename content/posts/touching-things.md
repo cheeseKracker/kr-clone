@@ -1,5 +1,4 @@
 ---
-slug: "touching-things"
 title: "Touching Things"
 date: "2019-05-03"
 displayDate: "May 3, 2019"

@@ -1,5 +1,4 @@
 ---
-slug: "html"
 title: "HTML"
 date: "2018-06-03"
 displayDate: "June 3, 2018"

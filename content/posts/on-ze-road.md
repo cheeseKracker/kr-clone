@@ -1,5 +1,4 @@
 ---
-slug: "on-ze-road"
 title: "On Ze Road"
 date: "2022-08-11"
 displayDate: "August 11, 2022"

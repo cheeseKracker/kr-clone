@@ -1,5 +1,4 @@
 ---
-slug: "we-seeded-the-clouds-and-it-rained"
 title: "We Seeded the Clouds and It Rained"
 date: "2017-02-05"
 displayDate: "February 5, 2017"

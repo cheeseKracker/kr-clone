@@ -1,5 +1,4 @@
 ---
-slug: "the-revolution-will-be-rac-and-it-will-be-too-late-for-a-tatkal-ticket-anyway"
 title: "The Revolution Will Be RAC and It Will Be Too Late for a Tatkal Ticket Anyway"
 date: "2016-10-29"
 displayDate: "October 29, 2016"

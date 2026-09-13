@@ -1,5 +1,4 @@
 ---
-slug: "1-5-track"
 title: "1.5 Track"
 date: "2021-01-11"
 displayDate: "January 11, 2021"

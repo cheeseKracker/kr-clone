@@ -1,5 +1,4 @@
 ---
-slug: "gradient-retriever"
 title: "Gradient Retriever"
 date: "2024-07-24"
 displayDate: "July 24, 2024"

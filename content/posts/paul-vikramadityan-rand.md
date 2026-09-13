@@ -1,5 +1,4 @@
 ---
-slug: "paul-vikramadityan-rand"
 title: "Paul Vikramadityan Rand"
 date: "2019-03-17"
 displayDate: "March 17, 2019"

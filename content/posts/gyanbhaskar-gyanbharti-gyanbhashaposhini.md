@@ -1,5 +1,4 @@
 ---
-slug: "gyanbhaskar-gyanbharti-gyanbhashaposhini"
 title: "GyanBhaskar-GyanBharti-GyanBhashaposhini"
 date: "2021-12-16"
 displayDate: "December 16, 2021"

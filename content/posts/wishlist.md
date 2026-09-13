@@ -1,5 +1,4 @@
 ---
-slug: "wishlist"
 title: "Wishlist"
 date: "2018-05-22"
 displayDate: "May 22, 2018"

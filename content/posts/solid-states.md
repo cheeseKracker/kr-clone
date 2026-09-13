@@ -1,5 +1,4 @@
 ---
-slug: "solid-states"
 title: "Solid States"
 date: "2025-03-14"
 displayDate: "March 14, 2025"

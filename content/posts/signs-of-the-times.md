@@ -1,5 +1,4 @@
 ---
-slug: "signs-of-the-times"
 title: "Signs of The Times"
 date: "2025-03-18"
 displayDate: "March 18, 2025"

@@ -1,5 +1,4 @@
 ---
-slug: "sidewalks"
 title: "Sidewalks"
 date: "2020-08-03"
 displayDate: "August 3, 2020"

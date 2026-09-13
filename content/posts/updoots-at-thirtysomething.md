@@ -1,5 +1,4 @@
 ---
-slug: "updoots-at-thirtysomething"
 title: "Updoots at ThirtySomething"
 date: "2024-04-01"
 displayDate: "April 1, 2024"

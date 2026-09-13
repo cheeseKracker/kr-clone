@@ -1,5 +1,4 @@
 ---
-slug: "listening-to-three-parts-sedaris-in-bombayupdike-the-link"
 date: "2015-07-31"
 displayDate: "July 31, 2015"
 readingMinutes: 1

@@ -1,5 +1,4 @@
 ---
-slug: "on-style-style-is-not-to-be-trusted"
 title: "On Style (STYLE IS NOT TO BE TRUSTED.)"
 date: "2020-02-20"
 displayDate: "February 20, 2020"

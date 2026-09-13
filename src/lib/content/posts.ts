@@ -5,6 +5,31 @@ import type { Post } from "./types";
 
 const POSTS_DIR = path.join(process.cwd(), "content/posts");
 
+/** Average adult reading speed, used when a post does not state its own. */
+const WORDS_PER_MINUTE = 200;
+
+/** "2026-03-29" -> "March 29, 2026", matching how posts were originally dated. */
+function formatDisplayDate(iso: string): string {
+  const parsed = new Date(`${iso}T00:00:00Z`);
+  if (Number.isNaN(parsed.getTime())) return iso;
+  return parsed.toLocaleDateString("en-US", {
+    month: "long",
+    day: "numeric",
+    year: "numeric",
+    timeZone: "UTC",
+  });
+}
+
+/** Word count of the body with markdown syntax and image URLs discounted. */
+function estimateReadingMinutes(body: string): number {
+  const words = body
+    .replace(/!\[[^\]]*\]\([^)]*\)/g, "")
+    .replace(/\[([^\]]*)\]\([^)]*\)/g, "$1")
+    .split(/\s+/)
+    .filter(Boolean).length;
+  return Math.max(1, Math.round(words / WORDS_PER_MINUTE));
+}
+
 /**
  * Parsed once per process and reused. Content is read from disk at build time,
  * so this cache lives for the whole static generation run.
@@ -14,16 +39,20 @@ let cache: { all: Post[]; bySlug: Map<string, Post> } | null = null;
 function parse(file: string): Post {
   const raw = fs.readFileSync(path.join(POSTS_DIR, file), "utf8");
   const { data, content } = matter(raw);
+  const body = content.trim();
+  const date = String(data.date).slice(0, 10);
   return {
     slug: data.slug ?? file.replace(/\.md$/, ""),
     title: data.title ?? null,
-    date: String(data.date),
-    displayDate: data.displayDate ?? String(data.date),
-    readingMinutes: data.readingMinutes ?? null,
+    date,
+    // Both of these are derived when absent, so a new post only has to supply
+    // a title, a date and its tags.
+    displayDate: data.displayDate ?? formatDisplayDate(date),
+    readingMinutes: data.readingMinutes ?? estimateReadingMinutes(body),
     readingApprox: data.readingApprox === true,
     standing: data.standing === true,
     tags: Array.isArray(data.tags) ? data.tags : [],
-    body: content.trim(),
+    body,
   };
 }
 

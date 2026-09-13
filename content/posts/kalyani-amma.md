@@ -1,5 +1,4 @@
 ---
-slug: "kalyani-amma"
 title: "Kalyani-amma"
 date: "2023-05-31"
 displayDate: "May 31, 2023"

@@ -1,5 +1,4 @@
 ---
-slug: "knapp"
 title: "KNapp"
 date: "2018-11-01"
 displayDate: "November 1, 2018"

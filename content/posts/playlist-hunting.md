@@ -1,5 +1,4 @@
 ---
-slug: "playlist-hunting"
 title: "Playlist Hunting"
 date: "2016-08-28"
 displayDate: "August 28, 2016"

@@ -1,5 +1,4 @@
 ---
-slug: "frazz"
 title: "Frazz"
 date: "2018-01-11"
 displayDate: "January 11, 2018"

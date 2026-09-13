@@ -1,5 +1,4 @@
 ---
-slug: "this-scanner-bed-deserves-colin"
 title: "This Scanner-bed Deserves Colin’"
 date: "2019-09-15"
 displayDate: "September 15, 2019"

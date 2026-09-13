@@ -1,5 +1,4 @@
 ---
-slug: "chel-gato-tails"
 title: "Chel-gato Tails"
 date: "2021-08-06"
 displayDate: "August 6, 2021"

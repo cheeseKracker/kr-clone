@@ -1,5 +1,4 @@
 ---
-slug: "relingos"
 title: "Relingos"
 date: "2021-05-12"
 displayDate: "May 12, 2021"

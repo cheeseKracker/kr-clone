@@ -1,5 +1,4 @@
 ---
-slug: "all-roads-lead-to-roam"
 title: "All Roads Lead to Roam"
 date: "2021-06-27"
 displayDate: "June 27, 2021"

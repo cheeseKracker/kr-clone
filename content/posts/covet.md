@@ -1,5 +1,4 @@
 ---
-slug: "covet"
 title: "Covet"
 date: "2017-05-09"
 displayDate: "May 9, 2017"

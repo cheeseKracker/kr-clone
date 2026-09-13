@@ -1,5 +1,4 @@
 ---
-slug: "monet"
 title: "Monet"
 date: "2017-12-31"
 displayDate: "December 31, 2017"

@@ -1,5 +1,4 @@
 ---
-slug: "in-which-the-author-climbs-a-short-rock-outcrop-and-attempts-contemplating-weighty-stuff"
 title: "In Which He Climbs a Short Rock Outcrop and Attempts Contemplating Weighty… Stuff"
 date: "2019-09-14"
 displayDate: "September 14, 2019"

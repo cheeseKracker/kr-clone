@@ -1,5 +1,4 @@
 ---
-slug: "walkzen-apologies"
 title: "WalkZen (Apologies!)"
 date: "2019-11-17"
 displayDate: "November 17, 2019"

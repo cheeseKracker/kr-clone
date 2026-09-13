@@ -1,5 +1,4 @@
 ---
-slug: "viva-panjim"
 title: "Viva, Panjim!"
 date: "2023-06-27"
 displayDate: "June 27, 2023"

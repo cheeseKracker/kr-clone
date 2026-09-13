@@ -1,5 +1,4 @@
 ---
-slug: "zen-and-the-zen-of-motorcycle-something"
 title: "Zen and the Zen of Motorcycle Something"
 date: "2026-02-27"
 displayDate: "February 27, 2026"

@@ -1,5 +1,4 @@
 ---
-slug: "the-stuff-of-liff-versus-the-liff-of-stuff"
 title: "The Stuff of Liff Versus the Liff of Stuff"
 date: "2024-07-29"
 displayDate: "July 29, 2024"

@@ -1,5 +1,4 @@
 ---
-slug: "suba"
 title: "SuBa"
 date: "2022-06-17"
 displayDate: "June 17, 2022"

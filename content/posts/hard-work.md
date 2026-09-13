@@ -1,5 +1,4 @@
 ---
-slug: "hard-work"
 title: "Hard/Work"
 date: "2018-11-24"
 displayDate: "November 24, 2018"

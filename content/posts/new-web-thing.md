@@ -1,5 +1,4 @@
 ---
-slug: "new-web-thing"
 title: "New Web Thing"
 date: "2020-08-09"
 displayDate: "August 9, 2020"

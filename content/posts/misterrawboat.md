@@ -1,5 +1,4 @@
 ---
-slug: "misterrawboat"
 title: "MisterRawboat"
 date: "2020-10-23"
 displayDate: "October 23, 2020"

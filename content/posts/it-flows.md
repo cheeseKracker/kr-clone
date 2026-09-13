@@ -1,5 +1,4 @@
 ---
-slug: "it-flows"
 title: "It Flows"
 date: "2023-03-05"
 displayDate: "March 5, 2023"

@@ -1,5 +1,4 @@
 ---
-slug: "photosynthesis"
 title: "Photosynthesis"
 date: "2022-01-10"
 displayDate: "January 10, 2022"

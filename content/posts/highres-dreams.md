@@ -1,5 +1,4 @@
 ---
-slug: "highres-dreams"
 title: "HighRes Dreams"
 date: "2021-10-20"
 displayDate: "October 20, 2021"

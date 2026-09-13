@@ -1,5 +1,4 @@
 ---
-slug: "them-dashes-or-the-offical-em-dash-policy-here-on-exif"
 title: "Them Dashes (Or the Offical Em Dash Policy here on exif)"
 date: "2019-02-20"
 displayDate: "February 20, 2019"

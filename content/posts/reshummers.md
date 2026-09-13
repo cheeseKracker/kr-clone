@@ -1,5 +1,4 @@
 ---
-slug: "reshummers"
 title: "Of Heads-of-Departments and Thakkali-Seeds"
 date: "2019-12-31"
 displayDate: "December 31, 2019"

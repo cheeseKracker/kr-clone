@@ -1,5 +1,4 @@
 ---
-slug: "typographyreturns"
 title: "Type 2 / 2020 March~"
 date: "2020-04-19"
 displayDate: "April 19, 2020"

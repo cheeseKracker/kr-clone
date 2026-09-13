@@ -1,5 +1,4 @@
 ---
-slug: "in-an-umebayashi-induced-comagasm-the-atm-queue-snakes-along"
 date: "2016-11-12"
 displayDate: "November 12, 2016"
 readingMinutes: 1

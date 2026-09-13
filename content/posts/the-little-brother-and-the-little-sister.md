@@ -1,5 +1,4 @@
 ---
-slug: "the-little-brother-and-the-little-sister"
 title: "The Little Brother (and the Little Sister)"
 date: "2017-04-06"
 displayDate: "April 6, 2017"

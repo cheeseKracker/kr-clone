@@ -1,5 +1,4 @@
 ---
-slug: "acuity"
 title: "Acuity"
 date: "2019-11-20"
 displayDate: "November 20, 2019"

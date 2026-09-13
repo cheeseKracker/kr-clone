@@ -1,5 +1,4 @@
 ---
-slug: "tabebuias-20250330"
 title: "Tabebuias, 20250330"
 date: "2025-03-30"
 displayDate: "March 30, 2025"
