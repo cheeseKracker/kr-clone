@@ -1,36 +1,76 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# keyaar.in — personal site
 
-## Getting Started
+A Next.js site. All content lives in plain markdown files under `content/`,
+so adding a post never means touching code.
 
-First, run the development server:
+## Adding a blog post
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+Create one file: `content/posts/my-post-slug.md`
+
+```markdown
+---
+slug: "my-post-slug"
+title: "My Post Title"
+date: "2026-09-14"
+displayDate: "September 14, 2026"
+readingMinutes: 3
+tags: ["places", "text"]
+---
+
+Write the post here, in markdown.
+
+![A photo](/blog/bl-content/uploads/my-photo.jpg)
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+That is the whole job. The following update themselves — you never edit them:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- the blog index at `/blog`
+- every tag archive at `/blog/tag/<tag>`
+- `sitemap.xml`
+- the "older posts" archive list
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+**The filename becomes the URL.** `my-post-slug.md` is served at `/blog/my-post-slug`.
 
-## Learn More
+**Tags** must match an existing slug in `content/tags.json` (or add a new entry
+there — `"slug": "Display Label"`). Use the slug in the post's `tags` list, not
+the label.
 
-To learn more about Next.js, take a look at the following resources:
+**Photos** go in `public/`, and the path in markdown starts from there:
+a file at `public/blog/uploads/cat.jpg` is written as `/blog/uploads/cat.jpg`.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+**Standing pages** (bio, bookshelf, gear, wishlist) add `standing: true` to the
+frontmatter. They stay reachable at their URL but are kept out of the dated feed.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Adding a non-blog page
 
-## Deploy on Vercel
+Create `content/pages/<name>.md` with `path: "/the-url"` in the frontmatter.
+It is picked up by the catch-all route automatically.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Project layout
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```
+content/posts/     one markdown file per blog post  ← add posts here
+content/pages/     standalone pages (/sandbox, /humans.txt, …)
+content/tags.json  tag slug → display label
+public/            images and static files
+src/lib/site-config.ts   domain, nav links, site title
+src/lib/content/         loads and indexes the markdown; everything derives from here
+src/app/                 routes
+src/styles/theme-tokens.css   all colours, spacing and type sizes
+```
+
+To change a colour, a link in the nav, or the site title, edit
+`src/styles/theme-tokens.css` or `src/lib/site-config.ts` — not the components.
+
+## Running it
+
+```bash
+npm install
+npm run dev     # http://localhost:3000
+npm run build   # production build
+npm run lint
+```
+
+## Deploying
+
+Pushing to `main` deploys via Vercel.

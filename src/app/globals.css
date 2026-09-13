@@ -1,189 +1,280 @@
+/*
+ * Global stylesheet.
+ *
+ * Every colour, size, space and layout value comes from `theme-tokens.css`.
+ * There are no literals below except the 640px media-feature value, which the
+ * CSS syntax does not allow to be a custom property (see the note on that
+ * media query).
+ */
+
+/*
+ * Tailwind's preflight is load-bearing here and must not be removed:
+ *   - `ol, ul, menu { list-style: none }` is what suppresses the bullets on
+ *     every list that react-markdown emits;
+ *   - the heading reset is what makes `h1…h6` inherit size/weight so
+ *     `.page-markdown :is(h1,…,h6)` fully controls them;
+ *   - `*, ::before, ::after { margin: 0; padding: 0 }` is the spacing baseline
+ *     every rule below is written against.
+ * `@theme inline`'s `--font-sans` / `--font-mono` are load-bearing for the same
+ * reason: Tailwind turns them into `--default-font-family` /
+ * `--default-mono-font-family`, which preflight reads on `html` and on
+ * `code, kbd, samp, pre`. Dropping them would fall `<code>`/`<pre>` back to the
+ * generic `ui-monospace` stack.
+ */
 @import "tailwindcss";
 @import "../styles/theme-tokens.css";
 
-:root {
-  --keyaar-bg: var(--token-color-bg);
-  --keyaar-surface: #ffffff;
-  --keyaar-blue: var(--token-color-link);
-  --keyaar-red: var(--token-color-link-hover);
-  --keyaar-text: var(--token-color-link);
-}
+/*
+ * Tailwind's automatic source detection walks the project root, so it was
+ * scanning `content/site-content.json` — 1.2MB of migrated blog prose. Ordinary
+ * English words in that prose match utility candidates, so Tailwind emitted
+ * ~21 utilities that no element ever carries (`.visible`, `.absolute`,
+ * `.block`, `.table`, `.grid`, `.italic`, `.uppercase`, `.rounded`, `.shadow`,
+ * `.ring`, `.outline`, `.blur`, `.transition`, …) together with the whole
+ * `@property --tw-*` block those drag in: roughly 3.5KB of a 14.2KB stylesheet.
+ *
+ * `@source not` (Tailwind >= 4.1; 4.2.2 is installed) excludes it. The path is
+ * resolved relative to THIS file: `src/app/` + `../../content` = `<root>/content`.
+ *
+ * Placed after both `@import`s rather than between them, so the `@import` rules
+ * stay contiguous at the top of the sheet as plain CSS requires. Tailwind
+ * accepts `@source` anywhere at the top level.
+ */
+@source not "../../content";
 
+/*
+ * Load-bearing, not decoration. Tailwind maps these two theme keys onto
+ * `--default-font-family` and `--default-mono-font-family`, which preflight
+ * reads on `html` and on `code, kbd, samp, pre`. Without them `<code>` and
+ * `<pre>` in markdown fall back to the generic `ui-monospace` stack instead of
+ * IBM Plex Mono.
+ *
+ * `--color-background` / `--color-foreground` used to sit in this block too and
+ * have been removed: `@theme inline` keys are inlined into generated utilities
+ * rather than emitted as custom properties, and no `bg-background` /
+ * `text-foreground` utility is used anywhere, so they contributed nothing to
+ * the compiled stylesheet.
+ */
 @theme inline {
-  --color-background: var(--keyaar-bg);
-  --color-foreground: var(--keyaar-text);
   --font-sans: var(--font-ibm-plex-mono);
   --font-mono: var(--font-ibm-plex-mono);
 }
 
 body {
-  margin: 0;
-  background: var(--keyaar-bg);
-  color: var(--keyaar-text);
+  margin: var(--token-space-none);
+  background: var(--token-color-bg);
+  color: var(--token-color-text);
   font-family: var(--token-font-primary);
   font-size: var(--token-size-base);
   line-height: var(--token-line-height-base);
 }
 
+/*
+ * Link colour resolves through the cascade of `--token-color-link`, which
+ * `theme-tokens.css` overrides on `.site-root:not(.site-root--root)`. That
+ * replaces the old pair of hardcoded rules
+ *     .site-root:not(.site-root--root) a        { color: #0088ff }
+ *     .site-root:not(.site-root--root) a:hover  { color: … }
+ * The `:hover` half only existed because the first rule sat at (0,2,1) and so
+ * outranked `a:hover` at (0,1,1); with the colour now carried by an inherited
+ * custom property, `a:hover` (0,1,1) beats `a` (0,0,1) on its own.
+ */
 a {
-  color: var(--keyaar-blue);
+  color: var(--token-color-link);
   text-decoration: underline;
 }
 
 a:hover {
-  color: var(--keyaar-red);
-}
-
-.site-root:not(.site-root--root) a {
-  color: #0088ff;
-}
-
-.site-root:not(.site-root--root) a:hover {
-  color: var(--keyaar-red);
+  color: var(--token-color-link-hover);
 }
 
 .site-root {
-  min-height: 100vh;
-  padding: 1.5rem 1rem 3rem;
+  min-height: var(--token-layout-min-height);
+  padding: var(--token-space-3xl) var(--token-space-xl) var(--token-space-5xl);
 }
 
+/*
+ * 640px stays a literal on purpose: `var()` is not substituted inside a media
+ * condition, so `@media (max-width: var(--token-breakpoint-sm))` would never
+ * match. The value is mirrored as `--token-breakpoint-sm` in theme-tokens.css;
+ * keep the two in step by hand.
+ */
 @media (max-width: 640px) {
   .site-root {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: var(--token-layout-gutter);
+    padding-right: var(--token-layout-gutter);
   }
 }
 
+/*
+ * Dark blog shell. `--token-color-bg` / `--token-color-text` are re-declared on
+ * this same element in theme-tokens.css, so these two `var()`s pick up the dark
+ * values while `body` above keeps the cream ones.
+ */
 .site-root--blog {
-  background: #050505;
-  color: #9ea0a6;
+  background: var(--token-color-bg);
+  color: var(--token-color-text);
 }
 
 .site-root--blog .site-main {
-  max-width: min(1400px, calc(100vw - 2rem));
+  max-width: min(
+    var(--token-layout-measure-wide),
+    calc(100vw - var(--token-layout-viewport-inset))
+  );
 }
 
 .site-root--blog .site-main .page-markdown > * {
-  width: min(800px, calc(100% - 40px));
+  width: min(
+    var(--token-layout-measure-prose),
+    calc(100% - var(--token-layout-prose-inset))
+  );
   margin-left: auto;
   margin-right: auto;
 }
 
 .site-root--blog .site-main .page-markdown > ul {
-  padding-left: 1.25rem;
-}
-
-.site-root--blog .page-markdown p,
-.site-root--blog .page-markdown li,
-.site-root--blog .page-markdown {
-  color: #9ea0a6;
+  padding-left: var(--token-space-2xl);
 }
 
 .site-root--blog .meta-note {
-  color: #8f9198;
+  color: var(--token-color-text-muted);
 }
 
 .site-header {
-  max-width: 46rem;
-  margin: 0 auto 1.25rem;
+  max-width: var(--token-layout-measure);
+  margin: var(--token-space-none) auto var(--token-space-2xl);
 }
 
 .site-nav {
   display: flex;
-  gap: 1rem;
+  gap: var(--token-space-xl);
 }
 
 .site-main {
-  max-width: 46rem;
-  margin: 0 auto;
+  max-width: var(--token-layout-measure);
+  margin: var(--token-space-none) auto;
 }
 
+/*
+ * `.site-main--minfo` is emitted by src/app/blog/minfo/page.tsx (it passes
+ * mainClassName="site-main--minfo" to SiteShell) but no rule for it exists
+ * anywhere in this stylesheet, so the class is inert. Left unstyled on purpose:
+ * the intended treatment is unknown. Compare `.site-main--dog-years` below,
+ * which is the same mechanism and does have rules.
+ */
+
 .site-title {
-  font-size: 1.1rem;
-  font-weight: 500;
-  margin: 0 0 1.25rem;
+  font-size: var(--token-size-lg);
+  font-weight: var(--token-weight-medium);
+  margin: var(--token-space-none) var(--token-space-none) var(--token-space-2xl);
 }
 
 .page-markdown :is(h1, h2, h3, h4, h5, h6) {
-  font-size: 1.05rem;
-  font-weight: 500;
+  font-size: var(--token-size-md);
+  font-weight: var(--token-weight-medium);
 }
 
 .page-markdown p {
-  margin: 0 0 1rem;
+  margin: var(--token-space-none) var(--token-space-none) var(--token-space-xl);
 }
 
 .page-markdown ul {
-  margin: 0 0 1rem 1.25rem;
+  margin: var(--token-space-none) var(--token-space-none) var(--token-space-xl)
+    var(--token-space-2xl);
 }
 
 .post-list {
   list-style: none;
-  margin: 0;
-  padding: 0;
+  margin: var(--token-space-none);
+  padding: var(--token-space-none);
   display: grid;
-  gap: 0.5rem;
+  gap: var(--token-space-2xs);
 }
 
 .empty-state {
-  opacity: 0.8;
+  opacity: var(--token-opacity-muted);
 }
 
 .meta-note {
   display: block;
-  margin-top: 1rem;
-  font-size: 0.95rem;
-  opacity: 0.85;
+  margin-top: var(--token-space-xl);
+  font-size: var(--token-size-sm);
+  opacity: var(--token-opacity-subtle);
 }
 
 .exif-nav {
-  margin: 0 0 1.25rem;
-  padding: 0.75rem;
-  background: #050505;
-  border: 1px solid #0e0e0e;
+  margin: var(--token-space-none) var(--token-space-none) var(--token-space-2xl);
+  padding: var(--token-space-sm);
+  background: var(--token-color-nav-surface);
+  border: var(--token-border-width) solid var(--token-color-nav-border);
 }
 
+/*
+ * The blog shell keeps only the bottom margin from the rule above (it resets
+ * left/right to auto and leaves margin-top at 0) and drops the panel chrome.
+ */
 .site-root--blog .exif-nav {
-  max-width: min(1400px, calc(100vw - 2rem));
+  max-width: min(
+    var(--token-layout-measure-wide),
+    calc(100vw - var(--token-layout-viewport-inset))
+  );
   margin-left: auto;
   margin-right: auto;
-  padding: 0.35rem 0 0.9rem;
-  background: transparent;
-  border: 0;
+  padding: var(--token-space-3xs) var(--token-space-none) var(--token-space-lg);
+  background: var(--token-color-transparent);
+  border: var(--token-border-width-none);
 }
 
 .site-root--blog .site-main .page-markdown table tbody tr:nth-child(even) {
-  background-color: #1F1F1F;
+  background-color: var(--token-color-table-row);
 }
 
 .site-root--blog .site-main .page-markdown table tbody tr:nth-child(odd) {
-  background-color: transparent;
+  background-color: var(--token-color-transparent);
 }
 
 .site-main--dog-years table td {
-  padding: 0.6rem 0.5rem;
+  padding: var(--token-space-xs) var(--token-space-2xs);
 }
 
 .site-main--dog-years table tr {
-  line-height: 1.4;
+  line-height: var(--token-line-height-tight);
 }
 
 .exif-nav-title {
-  margin: 0 0 0.8rem;
-  color: #12a4ff;
-  font-weight: 600;
+  margin: var(--token-space-none) var(--token-space-none) var(--token-space-md);
+  color: var(--token-color-nav-title);
+  font-weight: var(--token-weight-semibold);
 }
 
 .exif-nav-links {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.9rem;
+  gap: var(--token-space-lg);
 }
 
-.exif-nav-links a {
-  color: #0088ff;
+/*
+ * `.exif-nav-links a` / `.exif-nav-links a:hover` used to restate #0088ff and
+ * the hover colour here. Both were redundant: the nav only ever renders inside
+ * `.site-root--blog`, which is `:not(.site-root--root)`, so its links already
+ * resolve `--token-color-link` to #0088ff and `a:hover` to the hover token.
+ */
+
+/*
+ * Action button — currently used only by the error boundary's retry control.
+ * Tailwind's preflight strips the UA button chrome (border/background/padding),
+ * so everything it needs is declared here rather than relying on defaults.
+ */
+.button {
+  font: inherit;
+  color: var(--token-color-link);
+  background: var(--token-color-transparent);
+  border: var(--token-border-width) solid currentColor;
+  padding: var(--token-space-2xs) var(--token-space-sm);
+  cursor: pointer;
+  text-decoration: underline;
 }
 
-.exif-nav-links a:hover {
-  color: var(--keyaar-red);
+.button:hover {
+  color: var(--token-color-link-hover);
 }

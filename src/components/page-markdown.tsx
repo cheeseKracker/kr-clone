@@ -1,37 +1,21 @@
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
+import { isExternalHref, toLocalHref } from "@/lib/site-config";
 
 type PageMarkdownProps = {
   content: string;
+  className?: string;
 };
 
-function toLocalHref(href?: string) {
-  if (!href) return href;
-  if (href.startsWith("/")) return href;
-
-  try {
-    const parsed = new URL(href);
-    const host = parsed.hostname.replace(/^www\./, "");
-    if (host === "keyaar.in" || host === "portofliokarak.vercel.app") {
-      return `${parsed.pathname}${parsed.search}${parsed.hash}`;
-    }
-  } catch {
-    return href;
-  }
-  return href;
-}
-
-export default function PageMarkdown({ content }: PageMarkdownProps) {
+export default function PageMarkdown({ content, className }: PageMarkdownProps) {
   return (
-    <article className="page-markdown">
+    <article className={className ? `page-markdown ${className}` : "page-markdown"}>
       <ReactMarkdown
         remarkPlugins={[remarkGfm]}
         components={{
           a: ({ href, children, ...props }) => {
             const nextHref = toLocalHref(href);
-            const external = Boolean(
-              nextHref && /^https?:\/\//i.test(nextHref) && !nextHref.includes("keyaar.in") && !nextHref.includes("portofliokarak.vercel.app"),
-            );
+            const external = Boolean(nextHref && isExternalHref(nextHref));
             return (
               <a
                 href={nextHref}
@@ -45,8 +29,8 @@ export default function PageMarkdown({ content }: PageMarkdownProps) {
           },
           img: ({ src, alt, ...props }) => {
             const nextSrc = typeof src === "string" ? toLocalHref(src) : undefined;
-            // Markdown content can contain arbitrary local and remote images without dimensions.
-            // Keep a plain img here rather than forcing Next Image into unsuitable content.
+            // Migrated markdown carries arbitrary images with no known dimensions,
+            // so next/image cannot be used here without guessing a layout.
             // eslint-disable-next-line @next/next/no-img-element
             return <img src={nextSrc} alt={alt ?? ""} loading="lazy" {...props} />;
           },

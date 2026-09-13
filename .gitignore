@@ -47,4 +47,6 @@ next-env.d.ts
 /data/normalized/
 
 # claude code session data
+# Note: claude/plan.md is already tracked in git. Ignore rules do not apply to
+# files that are already tracked, so plan.md keeps being versioned normally.
 /claude/

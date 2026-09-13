@@ -24,9 +24,12 @@ export default function MinfoBioClient({
 }: MinfoBioClientProps) {
   const [variantIndex, setVariantIndex] = useState(initialVariantIndex);
 
+  // Persist whenever the variant changes, including the initial server pick.
   useEffect(() => {
     rememberVariant(variantIndex);
+  }, [variantIndex]);
 
+  useEffect(() => {
     const logBioLinkClick = (event: MouseEvent) => {
       const target = event.target instanceof Element ? event.target : null;
       const anchor = target?.closest("a");
@@ -46,13 +49,8 @@ export default function MinfoBioClient({
       if (!samePath || !plainLeftClick) return;
 
       event.preventDefault();
-      setVariantIndex((currentIndex) => {
-        const nextIndex = pickDifferentMinfoBioVariant(currentIndex);
-
-        rememberVariant(nextIndex);
-
-        return nextIndex;
-      });
+      // The persist effect above picks this up; no need to write here too.
+      setVariantIndex((currentIndex) => pickDifferentMinfoBioVariant(currentIndex));
     };
 
     const reloadForHistoryRestore = () => {

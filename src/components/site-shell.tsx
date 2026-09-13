@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { ReactNode } from "react";
+import { PRIMARY_NAV_LINKS } from "@/lib/site-config";
 
 type SiteShellProps = {
   title?: string;
@@ -27,23 +28,22 @@ export default function SiteShell({
   ]
     .filter(Boolean)
     .join(" ");
-  const resolvedMainClassName = mainClassName
-    ? `site-main ${mainClassName}`
-    : "site-main";
 
   return (
     <div className={rootClassName}>
       {showPrimaryNav ? (
         <header className="site-header">
           <nav className="site-nav">
-            <Link href="/">home</Link>
-            <Link href="/blog">blog</Link>
-            <Link href="/now.html">now</Link>
+            {PRIMARY_NAV_LINKS.map((link) => (
+              <Link key={link.href} href={link.href}>
+                {link.label}
+              </Link>
+            ))}
           </nav>
         </header>
       ) : null}
       {topContent}
-      <main className={resolvedMainClassName}>
+      <main className={mainClassName ? `site-main ${mainClassName}` : "site-main"}>
         {title ? <h1 className="site-title">{title}</h1> : null}
         {children}
       </main>

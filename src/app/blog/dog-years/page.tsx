@@ -1,10 +1,17 @@
+import type { Metadata } from "next";
 import ExifBlogNav from "@/components/exif-blog-nav";
 import PageMarkdown from "@/components/page-markdown";
 import SiteShell from "@/components/site-shell";
-import { findPageByPath } from "@/lib/content";
+import { getPostBySlug } from "@/lib/content";
+
+export const metadata: Metadata = {
+  title: "Bookshelf",
+  description: "Dog Years: the quantified shelf.",
+  alternates: { canonical: "/blog/dog-years" },
+};
 
 export default function DogYearsPage() {
-  const page = findPageByPath("/blog/dog-years");
+  const post = getPostBySlug("dog-years");
 
   return (
     <SiteShell
@@ -13,7 +20,7 @@ export default function DogYearsPage() {
       topContent={<ExifBlogNav />}
       mainClassName="site-main--dog-years"
     >
-      <PageMarkdown content={page?.markdown ?? ""} />
+      <PageMarkdown content={post?.body ?? ""} />
     </SiteShell>
   );
 }

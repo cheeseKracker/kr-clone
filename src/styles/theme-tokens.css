@@ -1,9 +1,168 @@
+/*
+ * Design tokens
+ * =============
+ *
+ * Single source of truth for every rendered colour, size, space and layout
+ * value in the site. `globals.css` contains no literals of its own; it only
+ * consumes the tokens declared here.
+ *
+ * Layering:
+ *   :root                            light / cream root theme + every
+ *                                    non-themed scale (space, size, layout,
+ *                                    border, opacity)
+ *   .site-root--blog                 dark blog theme — re-declares ONLY the
+ *                                    colour tokens it changes
+ *   .site-root:not(.site-root--root) page-role override (not a theme) — see
+ *                                    the note on that block below
+ *
+ * This file is a pure extraction: every value below is the exact literal the
+ * stylesheet used before tokenisation. Nothing here changes what renders.
+ */
+
 :root {
+  /* ------------------------------------------------------------------ *
+   * Typeface
+   * ------------------------------------------------------------------ */
   --token-font-primary: var(--font-ibm-plex-mono), ui-monospace, SFMono-Regular, Menlo,
     Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
+  /* ------------------------------------------------------------------ *
+   * Type scale
+   *
+   * KNOWN QUIRK (pre-existing, deliberately preserved):
+   * `--token-size-base: 18px` is applied to `body`, but `rem` always resolves
+   * against the ROOT element (`html`), which keeps the UA default of 16px.
+   * So the rem-based steps below render SMALLER than body text:
+   *     --token-size-lg  1.10rem = 17.6px   (.site-title)
+   *     --token-size-md  1.05rem = 16.8px   (.page-markdown headings)
+   *     --token-size-sm  0.95rem = 15.2px   (.meta-note)
+   *     --token-size-base        = 18.0px   (body copy)
+   * i.e. headings are smaller than the paragraphs they head. That is how the
+   * site renders today. Switching the base to `html`, or restating these in
+   * `em`, would change the rendered design, so this is documented here rather
+   * than fixed.
+   * ------------------------------------------------------------------ */
+  --token-size-sm: 0.95rem;
+  --token-size-md: 1.05rem;
+  --token-size-lg: 1.1rem;
+  --token-size-base: 18px;
+
+  --token-weight-medium: 500;
+  --token-weight-semibold: 600;
+
+  --token-line-height-base: 1.65;
+  --token-line-height-tight: 1.4;
+
+  /* ------------------------------------------------------------------ *
+   * Space scale (ascending). `--token-space-none` exists so shorthand
+   * resets stay on the scale instead of reintroducing bare literals.
+   * ------------------------------------------------------------------ */
+  --token-space-none: 0;
+  --token-space-3xs: 0.35rem;
+  --token-space-2xs: 0.5rem;
+  --token-space-xs: 0.6rem;
+  --token-space-sm: 0.75rem;
+  --token-space-md: 0.8rem;
+  --token-space-lg: 0.9rem;
+  --token-space-xl: 1rem;
+  --token-space-2xl: 1.25rem;
+  --token-space-3xl: 1.5rem;
+  --token-space-4xl: 2rem;
+  --token-space-5xl: 3rem;
+
+  /* ------------------------------------------------------------------ *
+   * Layout
+   * ------------------------------------------------------------------ */
+  --token-layout-min-height: 100vh;
+  --token-layout-measure: 46rem; /* .site-header / .site-main */
+  --token-layout-measure-wide: 1400px; /* blog shell */
+  --token-layout-measure-prose: 800px; /* blog prose column */
+  --token-layout-viewport-inset: var(--token-space-4xl); /* calc(100vw - …) */
+  --token-layout-prose-inset: 40px; /* calc(100% - …), i.e. 20px per side */
+  --token-layout-gutter: 20px; /* side padding below the small breakpoint */
+
+  /*
+   * Documents the 640px literal that has to stay inline in globals.css.
+   * A media-feature value cannot be a custom property — `var()` is not
+   * substituted inside a media condition — so `@media (max-width:
+   * var(--token-breakpoint-sm))` would never match. The literal lives in the
+   * media query; this token gives the number one documented home.
+   */
+  --token-breakpoint-sm: 640px;
+
+  --token-border-width: 1px;
+  --token-border-width-none: 0;
+
+  /* ------------------------------------------------------------------ *
+   * Opacity
+   * ------------------------------------------------------------------ */
+  --token-opacity-muted: 0.8; /* .empty-state */
+  --token-opacity-subtle: 0.85; /* .meta-note */
+
+  /* ------------------------------------------------------------------ *
+   * Colour — light / cream root theme
+   *
+   * `--token-color-text` and `--token-color-link` hold the same value today,
+   * but they are separate tokens on purpose: before this refactor both body
+   * text and link colour were aliased to a single variable, so a theme could
+   * not restyle one without the other.
+   * ------------------------------------------------------------------ */
   --token-color-bg: #ffffee;
+  --token-color-text: #0022ff;
   --token-color-link: #0022ff;
   --token-color-link-hover: #ff0000;
-  --token-size-base: 18px;
-  --token-line-height-base: 1.65;
+  --token-color-transparent: transparent;
+
+  /*
+   * `.exif-nav` chrome. The base `.exif-nav` rule in globals.css is unscoped,
+   * so these resolve from :root. In practice the nav is only ever rendered
+   * inside `.site-root--blog` (every `<ExifBlogNav />` call site passes
+   * variant="blog"), which overrides the surface and the border — but the
+   * values are kept here verbatim so the unscoped rule keeps computing exactly
+   * what it computed before.
+   */
+  --token-color-nav-surface: #050505;
+  --token-color-nav-border: #0e0e0e;
+  --token-color-nav-title: #12a4ff;
+}
+
+/*
+ * Dark blog theme.
+ *
+ * These declarations sit on the same element that globals.css styles
+ * (`.site-root--blog`), and a custom property declared on an element is
+ * visible to that element's own `var()` references — so
+ * `.site-root--blog { background: var(--token-color-bg) }` resolves to
+ * #050505 here while `body` still resolves it to #ffffee from :root.
+ */
+.site-root--blog {
+  --token-color-bg: #050505;
+  --token-color-text: #9ea0a6;
+  --token-color-text-muted: #8f9198; /* .meta-note inside the blog shell */
+  --token-color-table-row: #1f1f1f; /* even rows in blog prose tables */
+}
+
+/*
+ * Page-role link colour — NOT a theme.
+ *
+ * Before this refactor this was a hardcoded rule in globals.css:
+ *     .site-root:not(.site-root--root) a { color: #0088ff }
+ * It is scoped by PAGE ROLE, not by theme: it applies to every page except the
+ * site root, which means it covers the light shell AND the dark blog shell.
+ *
+ * The specificity is load-bearing and must not be lowered:
+ *     .site-root:not(.site-root--root)   ->  (0,2,0)
+ *         `:not()` contributes the specificity of its most specific argument,
+ *         so .site-root (0,1,0) + .site-root--root (0,1,0) = (0,2,0)
+ *     .site-root--blog                   ->  (0,1,0)
+ * (0,2,0) beats (0,1,0), so this override wins over any `--token-color-link`
+ * a theme block might set on `.site-root--blog` — reproducing the old cascade,
+ * where `.site-root:not(.site-root--root) a` at (0,2,1) outranked everything
+ * else that coloured a link.
+ *
+ * Consequence, unchanged from before: on `.site-root--root` links stay
+ * `--token-color-link` from :root (#0022ff); everywhere else they are #0088ff.
+ */
+.site-root:not(.site-root--root) {
+  --token-color-link: #0088ff;
 }

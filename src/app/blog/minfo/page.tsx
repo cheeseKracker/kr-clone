@@ -2,22 +2,22 @@ import { cookies } from "next/headers";
 import ExifBlogNav from "@/components/exif-blog-nav";
 import PageMarkdown from "@/components/page-markdown";
 import SiteShell from "@/components/site-shell";
-import { findPageByPath } from "@/lib/content";
+import { getPostBySlug } from "@/lib/content";
 import {
   MINFO_BIO_VARIANTS,
   pickDifferentMinfoBioVariant,
 } from "@/lib/minfo-bio-variants";
-import MinfoBioIsland from "../../../components/minfo-bio-island";
+import MinfoBioClient from "@/components/minfo-bio-client";
 
 const MINFO_LAST_COOKIE = "minfo_last";
 
 export default async function MinfoPage() {
-  const page = findPageByPath("/blog/minfo");
+  const post = getPostBySlug("minfo");
 
   if (MINFO_BIO_VARIANTS.length === 0) {
     return (
       <SiteShell variant="blog" showPrimaryNav={false} topContent={<ExifBlogNav />}>
-        <PageMarkdown content={page?.markdown ?? "Bio content unavailable."} />
+        <PageMarkdown content={post?.body ?? "Bio content unavailable."} />
       </SiteShell>
     );
   }
@@ -35,7 +35,7 @@ export default async function MinfoPage() {
       topContent={<ExifBlogNav />}
       mainClassName="site-main--minfo"
     >
-      <MinfoBioIsland initialVariantIndex={initialVariantIndex} />
+      <MinfoBioClient initialVariantIndex={initialVariantIndex} />
     </SiteShell>
   );
 }
