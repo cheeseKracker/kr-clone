@@ -5,6 +5,14 @@ so adding a post never means touching code.
 
 ## Adding a blog post
 
+Two ways. The easiest is the CMS at
+[`/keystatic`](https://portofliokarak.vercel.app/keystatic) — log in with
+GitHub, fill in the form, hit save. It works from a phone, and saves become
+commits. Running locally, use `http://127.0.0.1:3000/keystatic` (**not**
+`localhost` — see `NOTES.md`).
+
+The other way is to add the file yourself.
+
 Create one file: `content/posts/my-post-slug.md`
 
 ```markdown
@@ -61,6 +69,9 @@ src/styles/theme-tokens.css   all colours, spacing and type sizes
 
 To change a colour, a link in the nav, or the site title, edit
 `src/styles/theme-tokens.css` or `src/lib/site-config.ts` — not the components.
+
+See `NOTES.md` for the current state of the project, known gotchas and open
+items.
 
 ## Running it
 
