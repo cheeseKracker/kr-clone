@@ -40,7 +40,13 @@ function parse(file: string): Post {
   const raw = fs.readFileSync(path.join(POSTS_DIR, file), "utf8");
   const { data, content } = matter(raw);
   const body = content.trim();
-  const date = String(data.date).slice(0, 10);
+  // YAML parses an unquoted `date: 2026-09-15` into a Date, which is what
+  // Keystatic writes; hand-written posts quote it and stay strings. Normalise
+  // both to an ISO day — String(someDate) would otherwise yield "Tue Sep 15".
+  const date =
+    data.date instanceof Date
+      ? data.date.toISOString().slice(0, 10)
+      : String(data.date).slice(0, 10);
   return {
     slug: data.slug ?? file.replace(/\.md$/, ""),
     title: data.title ?? null,
