@@ -6,24 +6,14 @@ const TAG_OPTIONS = Object.entries(tagLabels).map(([value, label]) => ({
   label: String(label),
 }));
 
-/**
- * GitHub storage needs a GitHub App, which supplies these three values. Keying
- * off their presence rather than NODE_ENV means the build works before the app
- * exists, and switches to GitHub automatically once the variables are set —
- * no code change needed.
- */
-const hasGitHubApp = Boolean(
-  process.env.KEYSTATIC_GITHUB_CLIENT_ID &&
-    process.env.KEYSTATIC_GITHUB_CLIENT_SECRET &&
-    process.env.KEYSTATIC_SECRET,
-);
-
 export default config({
-  // Local storage writes straight to disk and needs no auth, which is what you
-  // want when running `npm run dev`. Deployed, edits become GitHub commits.
-  storage: hasGitHubApp
-    ? { kind: "github", repo: "cheeseKracker/kr-clone" }
-    : { kind: "local" },
+  // GitHub storage: edits are committed to the repo, so the CMS works on the
+  // deployed site and from a phone, not just on this machine.
+  //
+  // Requires the GitHub App credentials in .env.local (and in Vercel). Without
+  // them Keystatic renders a blank page with no error. It also redirects
+  // localhost to 127.0.0.1 when running locally — that is expected.
+  storage: { kind: "github", repo: "cheeseKracker/kr-clone" },
 
   ui: {
     brand: { name: "keyaar" },

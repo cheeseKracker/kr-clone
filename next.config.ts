@@ -1,6 +1,12 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  // Keystatic's GitHub mode force-redirects localhost -> 127.0.0.1, which Next
+  // treats as a different origin and then blocks its own dev resources from,
+  // leaving the admin UI blank with no error. Dev-only; has no effect in
+  // production, where the site is served from a single real origin.
+  allowedDevOrigins: ["127.0.0.1"],
+
   // Drop the `x-powered-by: Next.js` response header. It advertises the stack
   // to scanners and buys nothing in return.
   poweredByHeader: false,
